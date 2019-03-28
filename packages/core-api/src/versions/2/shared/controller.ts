@@ -1,5 +1,5 @@
-import { app } from "@arkecosystem/core-container";
-import { Blockchain, Database } from "@arkecosystem/core-interfaces";
+import { app } from "@laroue/core-container";
+import { Blockchain, Database } from "@laroue/core-interfaces";
 import Hapi from "hapi";
 import {
     paginate,

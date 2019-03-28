@@ -1,4 +1,4 @@
-import { crypto } from "@arkecosystem/crypto";
+import { crypto } from "@laroue/crypto";
 import Joi from "joi";
 
 export const walletCreate = {

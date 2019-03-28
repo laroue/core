@@ -1,5 +1,5 @@
 /* tslint:disable:max-line-length */
-import "@arkecosystem/core-test-utils";
+import "@laroue/core-test-utils";
 import { asValue } from "awilix";
 import { Blockchain } from "../src/blockchain";
 import { defaults } from "../src/defaults";
@@ -28,9 +28,9 @@ describe("constructor - networkStart", () => {
         await __start(true);
 
         expect(loggerWarn).toHaveBeenCalledWith(
-            "Ark Core is launched in Genesis Start mode. This is usually for starting the first node on the blockchain. Unless you know what you are doing, this is likely wrong. :warning:",
+            "Core is launched in Genesis Start mode. This is usually for starting the first node on the blockchain. Unless you know what you are doing, this is likely wrong. :warning:",
         );
-        expect(loggerInfo).toHaveBeenCalledWith("Starting Ark Core for a new world, welcome aboard :rocket:");
+        expect(loggerInfo).toHaveBeenCalledWith("Starting Core for a new world, welcome aboard :rocket:");
     });
 
     describe("dispatch", () => {

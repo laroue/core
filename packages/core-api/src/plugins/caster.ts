@@ -1,4 +1,4 @@
-import { bignumify } from "@arkecosystem/core-utils";
+import { bignumify } from "@laroue/core-utils";
 import Hapi from "hapi";
 
 function isBoolean(value) {

@@ -1,7 +1,7 @@
-import "@arkecosystem/core-test-utils";
+import "@laroue/core-test-utils";
 import "jest-extended";
 
-import { crypto } from "@arkecosystem/crypto";
+import { crypto } from "@laroue/crypto";
 import genesisBlock from "../../../core-test-utils/src/config/testnet/genesisBlock.json";
 // noinspection TypeScriptPreferShortImport
 import { TransactionsRepository } from "../../dist/repositories/transactions";

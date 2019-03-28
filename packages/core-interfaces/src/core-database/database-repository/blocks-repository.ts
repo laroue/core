@@ -1,4 +1,4 @@
-import { Bignum } from "@arkecosystem/crypto";
+import { Bignum } from "@laroue/crypto";
 import { IRepository } from "./repository";
 
 export interface IBlocksRepository extends IRepository {

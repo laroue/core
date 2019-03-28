@@ -1,4 +1,4 @@
-jest.mock("@arkecosystem/core-container", () => {
+jest.mock("@laroue/core-container", () => {
     return {
         app: {
             getConfig: () => {

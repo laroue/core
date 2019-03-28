@@ -1,4 +1,4 @@
-# Core - Tester CLI
+# Core - Interfaces
 
 <p align="center">
     <img src="../../banner.png?sanitize=true" />
@@ -6,7 +6,7 @@
 
 ## Documentation
 
-You can find installation instructions and detailed instructions on how to use this package at the [dedicated documentation site](https://docs.laroue.org/guidebook/core/plugins/core-tester-cli.html).
+You can find installation instructions and detailed instructions on how to use this package at the [dedicated documentation site](https://docs.laroue.org/guidebook/core/plugins/core-interfaces.html).
 
 ## Security
 

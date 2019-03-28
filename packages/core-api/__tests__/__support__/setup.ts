@@ -1,5 +1,5 @@
-import { app } from "@arkecosystem/core-container";
-import { Database } from "@arkecosystem/core-interfaces";
+import { app } from "@laroue/core-container";
+import { Database } from "@laroue/core-interfaces";
 import delay from "delay";
 import { registerWithContainer, setUpContainer } from "../../../core-test-utils/src/helpers/container";
 import { plugin } from "../../src/plugin";
@@ -23,11 +23,11 @@ async function setUp() {
 
     await setUpContainer({
         exclude: [
-            "@arkecosystem/core-webhooks",
-            "@arkecosystem/core-graphql",
-            "@arkecosystem/core-forger",
-            "@arkecosystem/core-json-rpc",
-            "@arkecosystem/core-api",
+            "@laroue/core-webhooks",
+            "@laroue/core-graphql",
+            "@laroue/core-forger",
+            "@laroue/core-json-rpc",
+            "@laroue/core-api",
         ],
     });
 

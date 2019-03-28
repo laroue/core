@@ -1,4 +1,4 @@
-import { app } from "@arkecosystem/core-container";
+import { app } from "@laroue/core-container";
 import { registerWithContainer, setUpContainer } from "../../../core-test-utils/src/helpers/container";
 
 jest.setTimeout(60000);
@@ -27,16 +27,16 @@ const options = {
 
 export const setUp = async () => {
     return await setUpContainer({
-        exit: "@arkecosystem/core-blockchain",
-        exclude: ["@arkecosystem/core-transaction-pool"],
+        exit: "@laroue/core-blockchain",
+        exclude: ["@laroue/core-transaction-pool"],
         network: "unitnet",
     });
 };
 
 export const setUpFull = async () => {
     await setUpContainer({
-        exit: "@arkecosystem/core-transaction-pool",
-        exclude: ["@arkecosystem/core-transaction-pool"],
+        exit: "@laroue/core-transaction-pool",
+        exclude: ["@laroue/core-transaction-pool"],
         network: "unitnet",
     });
 
@@ -44,13 +44,13 @@ export const setUpFull = async () => {
 
     // now registering the plugins that need to be registered after transaction pool
     // register p2p
-    await registerWithContainer(require("@arkecosystem/core-p2p").plugin, {
+    await registerWithContainer(require("@laroue/core-p2p").plugin, {
         host: "0.0.0.0",
         port: 4000,
         minimumNetworkReach: 5,
         coldStart: 5,
     });
-    await registerWithContainer(require("@arkecosystem/core-blockchain").plugin, {});
+    await registerWithContainer(require("@laroue/core-blockchain").plugin, {});
     return app;
 };
 
@@ -60,8 +60,8 @@ export const tearDown = async () => {
 
 export const tearDownFull = async () => {
     await require("../../src/plugin").plugin.deregister(app, options);
-    await require("@arkecosystem/core-p2p").plugin.deregister(app, {});
-    await require("@arkecosystem/core-blockchain").plugin.deregister(app, {});
+    await require("@laroue/core-p2p").plugin.deregister(app, {});
+    await require("@laroue/core-blockchain").plugin.deregister(app, {});
 
     await app.tearDown();
 };

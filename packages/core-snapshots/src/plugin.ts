@@ -1,5 +1,5 @@
-import { PostgresConnection } from "@arkecosystem/core-database-postgres";
-import { Container, Database } from "@arkecosystem/core-interfaces";
+import { PostgresConnection } from "@laroue/core-database-postgres";
+import { Container, Database } from "@laroue/core-interfaces";
 import { defaults } from "./defaults";
 import { SnapshotManager } from "./manager";
 

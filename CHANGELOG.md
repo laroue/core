@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file.
 
-The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
+The format is based on [Keep a Changelog](http://keepachangelog.com/fr/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
@@ -101,7 +101,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 -   Improved performance of BIP38 ([#1941])
 -   Cleaned up the logic of block processing ([#1953])
 -   Cleaned up the logic of serialise/deserialise in crypto ([#1969])
--   Replaced all ARK naming with CORE ([#1970])
+-   Replaced all MLC naming with CORE ([#1970])
 -   Use system paths for data and configuration ([#1987])
 -   Increased the maximum transaction age to 6 hours ([#1996])
 -   Replaced progress bars with logging to reduce noise ([#2044])
@@ -130,7 +130,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 -   Properly verify block slot timestamps ([#1985])
 -   Return fixed peer states for v1 and v2 API responses ([#2027])
 -   Validate IP ranges to detect loopbacks ([#2045])
--   https://github.com/ArkEcosystem/security-vulnerabilities/blob/master/core/core-sv-010.md ([#2046])
+-   https://github.com/laroue/security-vulnerabilities/blob/master/core/core-sv-010.md ([#2046])
 -   Check if the blockchain state storage is available before performing fork checks ([#2047])
 -   Gracefully handle a corrupted cached `peers.json` file ([#2061])
 -   Always sort transactions by sequence and the requested field to make API sorting deterministic ([#2058])
@@ -139,28 +139,28 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Removed
 
 -   Removed the `transactionsFromIds` P2P endpoint ([#1911])
--   Removed the `validator` and `rules` fron `@arkecosystem/crypto` ([#2021])
+-   Removed the `validator` and `rules` fron `@laroue/crypto` ([#2021])
 -   Ended support for the legacy multisignatures from the previous LISK fork ([#2057])
 
 ## [2.0.19] - 2019-01-31
 
 ### Fixed
 
--   https://github.com/ArkEcosystem/security-vulnerabilities/blob/master/core/core-sv-009.md
--   https://github.com/ArkEcosystem/security-vulnerabilities/blob/master/core/core-sv-010.md
+-   https://github.com/laroue/security-vulnerabilities/blob/master/core/core-sv-009.md
+-   https://github.com/laroue/security-vulnerabilities/blob/master/core/core-sv-010.md
 
 ## [2.0.18] - 2019-01-28
 
 ### Fixed
 
--   https://github.com/ArkEcosystem/security-vulnerabilities/blob/master/core/core-sv-011.md
+-   https://github.com/laroue/security-vulnerabilities/blob/master/core/core-sv-011.md
 
 ## [2.0.17] - 2019-01-15
 
 ### Fixed
 
--   https://github.com/ArkEcosystem/security-vulnerabilities/blob/master/core/core-sv-008.md
--   https://github.com/ArkEcosystem/security-vulnerabilities/blob/master/core/core-sv-007.md
+-   https://github.com/laroue/security-vulnerabilities/blob/master/core/core-sv-008.md
+-   https://github.com/laroue/security-vulnerabilities/blob/master/core/core-sv-007.md
 
 ## [2.0.16] - 2018-12-17
 
@@ -170,10 +170,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 Closed security vulnerabilities:
 
--   [CORE-SV-004](https://github.com/ArkEcosystem/security-vulnerabilities/blob/master/core/core-sv-004.md)
--   [CORE-SV-003](https://github.com/ArkEcosystem/security-vulnerabilities/blob/master/core/core-sv-003.md)
--   [CORE-SV-002](https://github.com/ArkEcosystem/security-vulnerabilities/blob/master/core/core-sv-002.md)
--   [CORE-SV-001](https://github.com/ArkEcosystem/security-vulnerabilities/blob/master/core/core-sv-001.md)
+-   [CORE-SV-004](https://github.com/laroue/security-vulnerabilities/blob/master/core/core-sv-004.md)
+-   [CORE-SV-003](https://github.com/laroue/security-vulnerabilities/blob/master/core/core-sv-003.md)
+-   [CORE-SV-002](https://github.com/laroue/security-vulnerabilities/blob/master/core/core-sv-002.md)
+-   [CORE-SV-001](https://github.com/laroue/security-vulnerabilities/blob/master/core/core-sv-001.md)
 
 ## [2.0.15] - 2018-12-11
 
@@ -230,120 +230,120 @@ Closed security vulnerabilities:
 
 -   Initial Release
 
-[unreleased]: https://github.com/ArkEcosystem/core/compare/2.2.0...develop
-[2.2.0]: https://github.com/ArkEcosystem/core/compare/2.1.2...2.2.0
-[2.1.2]: https://github.com/ArkEcosystem/core/compare/2.1.1..2.1.2
-[2.1.1]: https://github.com/ArkEcosystem/core/compare/2.1.0..2.1.1
-[2.1.0]: https://github.com/ArkEcosystem/core/compare/2.0.19...2.1.0
-[2.0.19]: https://github.com/ArkEcosystem/core/compare/2.0.18...2.0.19
-[2.0.18]: https://github.com/ArkEcosystem/core/compare/2.0.17...2.0.18
-[2.0.17]: https://github.com/ArkEcosystem/core/compare/2.0.16...2.0.17
-[2.0.16]: https://github.com/ArkEcosystem/core/compare/2.0.15...2.0.16
-[2.0.15]: https://github.com/ArkEcosystem/core/compare/2.0.14...2.0.15
-[2.0.14]: https://github.com/ArkEcosystem/core/compare/2.0.13...2.0.14
-[2.0.13]: https://github.com/ArkEcosystem/core/compare/2.0.12...2.0.13
-[2.0.12]: https://github.com/ArkEcosystem/core/compare/2.0.11...2.0.12
-[2.0.11]: https://github.com/ArkEcosystem/core/compare/2.0.1...2.0.11
-[2.0.1]: https://github.com/ArkEcosystem/core/compare/2.0.0...2.0.1
-[2.0.0]: https://github.com/ArkEcosystem/core/compare/0.1.1...2.0.0
-[#1563]: https://github.com/ArkEcosystem/core/pull/1563
-[#1564]: https://github.com/ArkEcosystem/core/pull/1564
-[#1625]: https://github.com/ArkEcosystem/core/pull/1625
-[#1626]: https://github.com/ArkEcosystem/core/pull/1626
-[#1634]: https://github.com/ArkEcosystem/core/pull/1634
-[#1636]: https://github.com/ArkEcosystem/core/pull/1636
-[#1638]: https://github.com/ArkEcosystem/core/pull/1638
-[#1638]: https://github.com/ArkEcosystem/core/pull/1638
-[#1640]: https://github.com/ArkEcosystem/core/pull/1640
-[#1645]: https://github.com/ArkEcosystem/core/pull/1645
-[#1646]: https://github.com/ArkEcosystem/core/pull/1646
-[#1648]: https://github.com/ArkEcosystem/core/pull/1648
-[#1653]: https://github.com/ArkEcosystem/core/pull/1653
-[#1655]: https://github.com/ArkEcosystem/core/pull/1655
-[#1658]: https://github.com/ArkEcosystem/core/pull/1658
-[#1673]: https://github.com/ArkEcosystem/core/pull/1673
-[#1689]: https://github.com/ArkEcosystem/core/pull/1689
-[#1692]: https://github.com/ArkEcosystem/core/pull/1692
-[#1695]: https://github.com/ArkEcosystem/core/pull/1695
-[#1717]: https://github.com/ArkEcosystem/core/pull/1717
-[#1730]: https://github.com/ArkEcosystem/core/pull/1730
-[#1731]: https://github.com/ArkEcosystem/core/pull/1731
-[#1732]: https://github.com/ArkEcosystem/core/pull/1732
-[#1733]: https://github.com/ArkEcosystem/core/pull/1733
-[#1738]: https://github.com/ArkEcosystem/core/pull/1738
-[#1831]: https://github.com/ArkEcosystem/core/pull/1831
-[#1833]: https://github.com/ArkEcosystem/core/pull/1833
-[#1836]: https://github.com/ArkEcosystem/core/pull/1836
-[#1837]: https://github.com/ArkEcosystem/core/pull/1837
-[#1853]: https://github.com/ArkEcosystem/core/pull/1853
-[#1869]: https://github.com/ArkEcosystem/core/pull/1869
-[#1873]: https://github.com/ArkEcosystem/core/pull/1873
-[#1887]: https://github.com/ArkEcosystem/core/pull/1887
-[#1891]: https://github.com/ArkEcosystem/core/pull/1891
-[#1898]: https://github.com/ArkEcosystem/core/pull/1898
-[#1901]: https://github.com/ArkEcosystem/core/pull/1901
-[#1905]: https://github.com/ArkEcosystem/core/pull/1905
-[#1906]: https://github.com/ArkEcosystem/core/pull/1906
-[#1911]: https://github.com/ArkEcosystem/core/pull/1911
-[#1917]: https://github.com/ArkEcosystem/core/pull/1917
-[#1919]: https://github.com/ArkEcosystem/core/pull/1919
-[#1924]: https://github.com/ArkEcosystem/core/pull/1924
-[#1926]: https://github.com/ArkEcosystem/core/pull/1926
-[#1927]: https://github.com/ArkEcosystem/core/pull/1927
-[#1930]: https://github.com/ArkEcosystem/core/pull/1930
-[#1931]: https://github.com/ArkEcosystem/core/pull/1931
-[#1939]: https://github.com/ArkEcosystem/core/pull/1939
-[#1940]: https://github.com/ArkEcosystem/core/pull/1940
-[#1941]: https://github.com/ArkEcosystem/core/pull/1941
-[#1943]: https://github.com/ArkEcosystem/core/pull/1943
-[#1947]: https://github.com/ArkEcosystem/core/pull/1947
-[#1948]: https://github.com/ArkEcosystem/core/pull/1948
-[#1953]: https://github.com/ArkEcosystem/core/pull/1953
-[#1954]: https://github.com/ArkEcosystem/core/pull/1954
-[#1955]: https://github.com/ArkEcosystem/core/pull/1955
-[#1957]: https://github.com/ArkEcosystem/core/pull/1957
-[#1969]: https://github.com/ArkEcosystem/core/pull/1969
-[#1970]: https://github.com/ArkEcosystem/core/pull/1970
-[#1985]: https://github.com/ArkEcosystem/core/pull/1985
-[#1987]: https://github.com/ArkEcosystem/core/pull/1987
-[#1996]: https://github.com/ArkEcosystem/core/pull/1996
-[#1999]: https://github.com/ArkEcosystem/core/pull/1999
-[#2009]: https://github.com/ArkEcosystem/core/pull/2009
-[#2016]: https://github.com/ArkEcosystem/core/pull/2016
-[#2021]: https://github.com/ArkEcosystem/core/pull/2021
-[#2038]: https://github.com/ArkEcosystem/core/pull/2038
-[#2044]: https://github.com/ArkEcosystem/core/pull/2044
-[#2045]: https://github.com/ArkEcosystem/core/pull/2045
-[#2046]: https://github.com/ArkEcosystem/core/pull/2046
-[#2047]: https://github.com/ArkEcosystem/core/pull/2047
-[#2049]: https://github.com/ArkEcosystem/core/pull/2049
-[#2050]: https://github.com/ArkEcosystem/core/pull/2050
-[#2051]: https://github.com/ArkEcosystem/core/pull/2051
-[#2052]: https://github.com/ArkEcosystem/core/pull/2052
-[#2053]: https://github.com/ArkEcosystem/core/pull/2053
-[#2055]: https://github.com/ArkEcosystem/core/pull/2055
-[#2057]: https://github.com/ArkEcosystem/core/pull/2057
-[#2058]: https://github.com/ArkEcosystem/core/pull/2058
-[#2061]: https://github.com/ArkEcosystem/core/pull/2061
-[#2080]: https://github.com/ArkEcosystem/core/pull/2080
-[#2082]: https://github.com/ArkEcosystem/core/pull/2082
-[#2083]: https://github.com/ArkEcosystem/core/pull/2083
-[#2091]: https://github.com/ArkEcosystem/core/pull/2091
-[#2100]: https://github.com/ArkEcosystem/core/pull/2100
-[#2102]: https://github.com/ArkEcosystem/core/pull/2102
-[#2103]: https://github.com/ArkEcosystem/core/pull/2103
-[#2106]: https://github.com/ArkEcosystem/core/pull/2106
-[#2108]: https://github.com/ArkEcosystem/core/pull/2108
-[#2119]: https://github.com/ArkEcosystem/core/pull/2119
-[#2121]: https://github.com/ArkEcosystem/core/pull/2121
-[#2123]: https://github.com/ArkEcosystem/core/pull/2123
-[#2125]: https://github.com/ArkEcosystem/core/pull/2125
-[#2135]: https://github.com/ArkEcosystem/core/pull/2135
-[#2137]: https://github.com/ArkEcosystem/core/pull/2137
-[#2139]: https://github.com/ArkEcosystem/core/pull/2139
-[#2142]: https://github.com/ArkEcosystem/core/pull/2142
-[#2144]: https://github.com/ArkEcosystem/core/pull/2144
-[#2149]: https://github.com/ArkEcosystem/core/pull/2149
-[#2152]: https://github.com/ArkEcosystem/core/pull/2152
-[#2207]: https://github.com/ArkEcosystem/core/pull/2207
-[#2217]: https://github.com/ArkEcosystem/core/pull/2217
+[unreleased]: https://github.com/laroue/core/compare/2.2.0...develop
+[2.2.0]: https://github.com/laroue/core/compare/2.1.2...2.2.0
+[2.1.2]: https://github.com/laroue/core/compare/2.1.1..2.1.2
+[2.1.1]: https://github.com/laroue/core/compare/2.1.0..2.1.1
+[2.1.0]: https://github.com/laroue/core/compare/2.0.19...2.1.0
+[2.0.19]: https://github.com/laroue/core/compare/2.0.18...2.0.19
+[2.0.18]: https://github.com/laroue/core/compare/2.0.17...2.0.18
+[2.0.17]: https://github.com/laroue/core/compare/2.0.16...2.0.17
+[2.0.16]: https://github.com/laroue/core/compare/2.0.15...2.0.16
+[2.0.15]: https://github.com/laroue/core/compare/2.0.14...2.0.15
+[2.0.14]: https://github.com/laroue/core/compare/2.0.13...2.0.14
+[2.0.13]: https://github.com/laroue/core/compare/2.0.12...2.0.13
+[2.0.12]: https://github.com/laroue/core/compare/2.0.11...2.0.12
+[2.0.11]: https://github.com/laroue/core/compare/2.0.1...2.0.11
+[2.0.1]: https://github.com/laroue/core/compare/2.0.0...2.0.1
+[2.0.0]: https://github.com/laroue/core/compare/0.1.1...2.0.0
+[#1563]: https://github.com/laroue/core/pull/1563
+[#1564]: https://github.com/laroue/core/pull/1564
+[#1625]: https://github.com/laroue/core/pull/1625
+[#1626]: https://github.com/laroue/core/pull/1626
+[#1634]: https://github.com/laroue/core/pull/1634
+[#1636]: https://github.com/laroue/core/pull/1636
+[#1638]: https://github.com/laroue/core/pull/1638
+[#1638]: https://github.com/laroue/core/pull/1638
+[#1640]: https://github.com/laroue/core/pull/1640
+[#1645]: https://github.com/laroue/core/pull/1645
+[#1646]: https://github.com/laroue/core/pull/1646
+[#1648]: https://github.com/laroue/core/pull/1648
+[#1653]: https://github.com/laroue/core/pull/1653
+[#1655]: https://github.com/laroue/core/pull/1655
+[#1658]: https://github.com/laroue/core/pull/1658
+[#1673]: https://github.com/laroue/core/pull/1673
+[#1689]: https://github.com/laroue/core/pull/1689
+[#1692]: https://github.com/laroue/core/pull/1692
+[#1695]: https://github.com/laroue/core/pull/1695
+[#1717]: https://github.com/laroue/core/pull/1717
+[#1730]: https://github.com/laroue/core/pull/1730
+[#1731]: https://github.com/laroue/core/pull/1731
+[#1732]: https://github.com/laroue/core/pull/1732
+[#1733]: https://github.com/laroue/core/pull/1733
+[#1738]: https://github.com/laroue/core/pull/1738
+[#1831]: https://github.com/laroue/core/pull/1831
+[#1833]: https://github.com/laroue/core/pull/1833
+[#1836]: https://github.com/laroue/core/pull/1836
+[#1837]: https://github.com/laroue/core/pull/1837
+[#1853]: https://github.com/laroue/core/pull/1853
+[#1869]: https://github.com/laroue/core/pull/1869
+[#1873]: https://github.com/laroue/core/pull/1873
+[#1887]: https://github.com/laroue/core/pull/1887
+[#1891]: https://github.com/laroue/core/pull/1891
+[#1898]: https://github.com/laroue/core/pull/1898
+[#1901]: https://github.com/laroue/core/pull/1901
+[#1905]: https://github.com/laroue/core/pull/1905
+[#1906]: https://github.com/laroue/core/pull/1906
+[#1911]: https://github.com/laroue/core/pull/1911
+[#1917]: https://github.com/laroue/core/pull/1917
+[#1919]: https://github.com/laroue/core/pull/1919
+[#1924]: https://github.com/laroue/core/pull/1924
+[#1926]: https://github.com/laroue/core/pull/1926
+[#1927]: https://github.com/laroue/core/pull/1927
+[#1930]: https://github.com/laroue/core/pull/1930
+[#1931]: https://github.com/laroue/core/pull/1931
+[#1939]: https://github.com/laroue/core/pull/1939
+[#1940]: https://github.com/laroue/core/pull/1940
+[#1941]: https://github.com/laroue/core/pull/1941
+[#1943]: https://github.com/laroue/core/pull/1943
+[#1947]: https://github.com/laroue/core/pull/1947
+[#1948]: https://github.com/laroue/core/pull/1948
+[#1953]: https://github.com/laroue/core/pull/1953
+[#1954]: https://github.com/laroue/core/pull/1954
+[#1955]: https://github.com/laroue/core/pull/1955
+[#1957]: https://github.com/laroue/core/pull/1957
+[#1969]: https://github.com/laroue/core/pull/1969
+[#1970]: https://github.com/laroue/core/pull/1970
+[#1985]: https://github.com/laroue/core/pull/1985
+[#1987]: https://github.com/laroue/core/pull/1987
+[#1996]: https://github.com/laroue/core/pull/1996
+[#1999]: https://github.com/laroue/core/pull/1999
+[#2009]: https://github.com/laroue/core/pull/2009
+[#2016]: https://github.com/laroue/core/pull/2016
+[#2021]: https://github.com/laroue/core/pull/2021
+[#2038]: https://github.com/laroue/core/pull/2038
+[#2044]: https://github.com/laroue/core/pull/2044
+[#2045]: https://github.com/laroue/core/pull/2045
+[#2046]: https://github.com/laroue/core/pull/2046
+[#2047]: https://github.com/laroue/core/pull/2047
+[#2049]: https://github.com/laroue/core/pull/2049
+[#2050]: https://github.com/laroue/core/pull/2050
+[#2051]: https://github.com/laroue/core/pull/2051
+[#2052]: https://github.com/laroue/core/pull/2052
+[#2053]: https://github.com/laroue/core/pull/2053
+[#2055]: https://github.com/laroue/core/pull/2055
+[#2057]: https://github.com/laroue/core/pull/2057
+[#2058]: https://github.com/laroue/core/pull/2058
+[#2061]: https://github.com/laroue/core/pull/2061
+[#2080]: https://github.com/laroue/core/pull/2080
+[#2082]: https://github.com/laroue/core/pull/2082
+[#2083]: https://github.com/laroue/core/pull/2083
+[#2091]: https://github.com/laroue/core/pull/2091
+[#2100]: https://github.com/laroue/core/pull/2100
+[#2102]: https://github.com/laroue/core/pull/2102
+[#2103]: https://github.com/laroue/core/pull/2103
+[#2106]: https://github.com/laroue/core/pull/2106
+[#2108]: https://github.com/laroue/core/pull/2108
+[#2119]: https://github.com/laroue/core/pull/2119
+[#2121]: https://github.com/laroue/core/pull/2121
+[#2123]: https://github.com/laroue/core/pull/2123
+[#2125]: https://github.com/laroue/core/pull/2125
+[#2135]: https://github.com/laroue/core/pull/2135
+[#2137]: https://github.com/laroue/core/pull/2137
+[#2139]: https://github.com/laroue/core/pull/2139
+[#2142]: https://github.com/laroue/core/pull/2142
+[#2144]: https://github.com/laroue/core/pull/2144
+[#2149]: https://github.com/laroue/core/pull/2149
+[#2152]: https://github.com/laroue/core/pull/2152
+[#2207]: https://github.com/laroue/core/pull/2207
+[#2217]: https://github.com/laroue/core/pull/2217

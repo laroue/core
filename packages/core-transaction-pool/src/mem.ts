@@ -1,4 +1,4 @@
-import { slots } from "@arkecosystem/crypto";
+import { slots } from "@laroue/crypto";
 import assert from "assert";
 import { MemPoolTransaction } from "./mem-pool-transaction";
 

@@ -1,5 +1,5 @@
-import { app } from "@arkecosystem/core-container";
-import { Blockchain } from "@arkecosystem/core-interfaces";
+import { app } from "@laroue/core-container";
+import { Blockchain } from "@laroue/core-interfaces";
 import { config as localConfig } from "../../config";
 
 const config = app.getConfig();

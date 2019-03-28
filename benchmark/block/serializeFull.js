@@ -1,6 +1,6 @@
 const {
     models
-} = require('@arkecosystem/crypto')
+} = require('@laroue/crypto')
 
 const data = require('../helpers').getJSONFixture('block/deserialized/transactions');
 

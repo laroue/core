@@ -1,6 +1,6 @@
 // tslint:disable:variable-name
 
-import { constants, models } from "@arkecosystem/crypto";
+import { constants, models } from "@laroue/crypto";
 import assert from "assert";
 
 const { TransactionTypes } = constants;

@@ -1,9 +1,9 @@
-import { client } from "@arkecosystem/crypto";
+import { client } from "@laroue/crypto";
 import { flags } from "@oclif/command";
 import pluralize from "pluralize";
 import superheroes from "superheroes";
 import { customFlags } from "../flags";
-import { logger, parseFee, satoshiToArk } from "../utils";
+import { logger, parseFee, satoshiToMlc } from "../utils";
 import { BaseCommand } from "./command";
 import { TransferCommand } from "./transfer";
 
@@ -70,7 +70,7 @@ export class DelegateRegistrationCommand extends BaseCommand {
             transactions.push(transaction);
 
             logger.info(
-                `${i} ==> ${transaction.id}, ${wallet.address} (fee: ${satoshiToArk(transaction.fee)}, username: ${
+                `${i} ==> ${transaction.id}, ${wallet.address} (fee: ${satoshiToMlc(transaction.fee)}, username: ${
                     wallet.username
                 })`,
             );

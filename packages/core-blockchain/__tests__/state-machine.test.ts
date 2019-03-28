@@ -1,7 +1,7 @@
-import "@arkecosystem/core-test-utils";
-import { roundCalculator } from "@arkecosystem/core-utils";
-import { slots } from "@arkecosystem/crypto";
-import { Block } from "@arkecosystem/crypto/dist/models";
+import "@laroue/core-test-utils";
+import { roundCalculator } from "@laroue/core-utils";
+import { slots } from "@laroue/crypto";
+import { Block } from "@laroue/crypto/dist/models";
 import { asValue } from "awilix";
 import { Blockchain } from "../src/blockchain";
 import { stateStorage } from "../src/state-storage";
@@ -230,7 +230,7 @@ describe("State Machine", () => {
             it("should call container forceExit with error message", () => {
                 const forceExit = jest.spyOn(container, "forceExit").mockImplementationOnce(() => null);
                 actionMap.exitApp();
-                expect(forceExit).lastCalledWith("Failed to startup blockchain. Exiting Ark Core! :rotating_light:");
+                expect(forceExit).lastCalledWith("Failed to startup blockchain. Exiting Core! :rotating_light:");
             });
         });
 

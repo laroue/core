@@ -1,6 +1,6 @@
-import { app } from "@arkecosystem/core-container";
-import { Logger } from "@arkecosystem/core-interfaces";
-import { SnapshotManager } from "@arkecosystem/core-snapshots";
+import { app } from "@laroue/core-container";
+import { Logger } from "@laroue/core-interfaces";
+import { SnapshotManager } from "@laroue/core-snapshots";
 import { flags } from "@oclif/command";
 import { setUpLite } from "../../helpers/snapshot";
 import { CommandFlags } from "../../types";
@@ -23,7 +23,7 @@ export class RollbackCommand extends BaseCommand {
         await setUpLite(flags);
 
         if (!app.has("snapshots")) {
-            this.error("The @arkecosystem/core-snapshots plugin is not installed.");
+            this.error("The @laroue/core-snapshots plugin is not installed.");
         }
 
         const logger = app.resolvePlugin<Logger.ILogger>("logger");

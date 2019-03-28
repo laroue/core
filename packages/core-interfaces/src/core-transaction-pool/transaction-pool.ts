@@ -1,6 +1,6 @@
 import dayjs from "dayjs-ext";
 
-import { constants, models } from "@arkecosystem/crypto";
+import { constants, models } from "@laroue/crypto";
 
 export interface AddTransactionResponseDTO {
     success: boolean;

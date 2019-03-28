@@ -1,4 +1,4 @@
-import { Database } from "@arkecosystem/core-interfaces";
+import { Database } from "@laroue/core-interfaces";
 
 export class DatabaseManager {
     public connections: { [key: string]: Database.IDatabaseConnection };

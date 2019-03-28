@@ -1,4 +1,4 @@
-import { app } from "@arkecosystem/core-container";
+import { app } from "@laroue/core-container";
 import { CommandFlags } from "../../types";
 import { BaseCommand } from "../command";
 
@@ -7,22 +7,22 @@ export class RunCommand extends BaseCommand {
 
     public static examples: string[] = [
         `Run core
-$ ark core:run
+$ mlc core:run
 `,
         `Run core as genesis
-$ ark core:run --networkStart
+$ mlc core:run --networkStart
 `,
         `Disable any discovery by other peers
-$ ark core:run --disableDiscovery
+$ mlc core:run --disableDiscovery
 `,
         `Skip the initial discovery
-$ ark core:run --skipDiscovery
+$ mlc core:run --skipDiscovery
 `,
         `Ignore the minimum network reach
-$ ark core:run --ignoreMinimumNetworkReach
+$ mlc core:run --ignoreMinimumNetworkReach
 `,
         `Start a seed
-$ ark core:run --launchMode=seed
+$ mlc core:run --launchMode=seed
 `,
     ];
 
@@ -37,11 +37,11 @@ $ ark core:run --launchMode=seed
 
         await this.buildApplication(app, flags, {
             options: {
-                "@arkecosystem/core-p2p": this.buildPeerOptions(flags),
-                "@arkecosystem/core-blockchain": {
+                "@laroue/core-p2p": this.buildPeerOptions(flags),
+                "@laroue/core-blockchain": {
                     networkStart: flags.networkStart,
                 },
-                "@arkecosystem/core-forger": await this.buildBIP38(flags),
+                "@laroue/core-forger": await this.buildBIP38(flags),
             },
         });
     }

@@ -1,9 +1,9 @@
-import { app } from "@arkecosystem/core-container";
-import { setUpContainer } from "@arkecosystem/core-test-utils/src/helpers/container";
+import { app } from "@laroue/core-container";
+import { setUpContainer } from "@laroue/core-test-utils/src/helpers/container";
 
 export const setUp = async () => {
     return setUpContainer({
-        exit: "@arkecosystem/core-p2p",
+        exit: "@laroue/core-p2p",
     });
 };
 

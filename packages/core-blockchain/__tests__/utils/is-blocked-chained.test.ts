@@ -1,6 +1,6 @@
 import "jest-extended";
 
-import { models, slots } from "@arkecosystem/crypto";
+import { models, slots } from "@laroue/crypto";
 import { isBlockChained } from "../../src/utils";
 
 describe("isChained", () => {

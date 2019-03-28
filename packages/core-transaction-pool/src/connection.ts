@@ -1,5 +1,5 @@
-import { app } from "@arkecosystem/core-container";
-import { Database, EventEmitter, Logger, TransactionPool as transactionPool } from "@arkecosystem/core-interfaces";
+import { app } from "@laroue/core-container";
+import { Database, EventEmitter, Logger, TransactionPool as transactionPool } from "@laroue/core-interfaces";
 
 import assert from "assert";
 import dayjs from "dayjs-ext";

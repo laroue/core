@@ -1,4 +1,4 @@
-import { app } from "@arkecosystem/core-container";
+import { app } from "@laroue/core-container";
 import { CommandFlags } from "../../types";
 import { BaseCommand } from "../command";
 
@@ -7,10 +7,10 @@ export class RunCommand extends BaseCommand {
 
     public static examples: string[] = [
         `Run a forger with a bip39 passphrase
-$ ark forger:run --bip39="..."
+$ mlc forger:run --bip39="..."
 `,
         `Run a forger with an encrypted bip38
-$ ark forger:run --bip38="..." --password="..."
+$ mlc forger:run --bip38="..." --password="..."
 `,
     ];
 
@@ -24,14 +24,14 @@ $ ark forger:run --bip38="..." --password="..."
 
         await this.buildApplication(app, flags, {
             include: [
-                "@arkecosystem/core-event-emitter",
-                "@arkecosystem/core-config",
-                "@arkecosystem/core-logger",
-                "@arkecosystem/core-logger-winston",
-                "@arkecosystem/core-forger",
+                "@laroue/core-event-emitter",
+                "@laroue/core-config",
+                "@laroue/core-logger",
+                "@laroue/core-logger-winston",
+                "@laroue/core-forger",
             ],
             options: {
-                "@arkecosystem/core-forger": await this.buildBIP38(flags),
+                "@laroue/core-forger": await this.buildBIP38(flags),
             },
         });
     }

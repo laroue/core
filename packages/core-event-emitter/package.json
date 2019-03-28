@@ -1,9 +1,9 @@
 {
-    "name": "@arkecosystem/core-event-emitter",
-    "description": "Event Manager for Ark Core",
+    "name": "@laroue/core-event-emitter",
+    "description": "Event Manager for Core",
     "version": "2.2.2",
     "contributors": [
-        "Brian Faust <brian@ark.io>"
+        "Luc Talarico <lta@laroue.org>"
     ],
     "license": "MIT",
     "main": "dist/index.js",

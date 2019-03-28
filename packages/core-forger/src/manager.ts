@@ -1,7 +1,7 @@
-import { app } from "@arkecosystem/core-container";
-import { Logger } from "@arkecosystem/core-interfaces";
-import { NetworkStateStatus } from "@arkecosystem/core-p2p";
-import { models, slots } from "@arkecosystem/crypto";
+import { app } from "@laroue/core-container";
+import { Logger } from "@laroue/core-interfaces";
+import { NetworkStateStatus } from "@laroue/core-p2p";
+import { models, slots } from "@laroue/crypto";
 import delay from "delay";
 import isEmpty from "lodash/isEmpty";
 import uniq from "lodash/uniq";
@@ -101,7 +101,7 @@ export class ForgerManager {
             round = await this.client.getRound();
             if (!round.canForge) {
                 // this.logger.debug('Block already forged in current slot')
-                // technically it is possible to compute doing shennanigan with arkjs.slots lib
+                // technically it is possible to compute doing shennanigan with mlcjs.slots lib
 
                 await delay(200); // basically looping until we lock at beginning of next slot
 

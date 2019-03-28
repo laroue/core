@@ -1,4 +1,4 @@
-import { models } from "@arkecosystem/crypto";
+import { models } from "@laroue/crypto";
 
 export interface IStateStorage {
     reset(): void;

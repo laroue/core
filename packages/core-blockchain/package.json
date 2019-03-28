@@ -1,11 +1,9 @@
 {
-    "name": "@arkecosystem/core-blockchain",
-    "description": "Blockchain Manager for Ark Core",
+    "name": "@laroue/core-blockchain",
+    "description": "Blockchain Manager for Core",
     "version": "2.2.2",
     "contributors": [
-        "François-Xavier Thoorens <fx@ark.io>",
-        "Kristjan Košič <kristjan@ark.io>",
-        "Brian Faust <brian@ark.io>"
+        "Luc Talarico <lta@laroue.org>"
     ],
     "license": "MIT",
     "main": "dist/index",
@@ -34,10 +32,10 @@
         "updates": "../../node_modules/npm-check-updates/bin/npm-check-updates -a"
     },
     "dependencies": {
-        "@arkecosystem/core-container": "^2.2.2",
-        "@arkecosystem/core-interfaces": "^2.2.2",
-        "@arkecosystem/core-utils": "^2.2.2",
-        "@arkecosystem/crypto": "^2.2.2",
+        "@laroue/core-container": "^2.2.2",
+        "@laroue/core-interfaces": "^2.2.2",
+        "@laroue/core-utils": "^2.2.2",
+        "@laroue/crypto": "^2.2.2",
         "async": "^2.6.2",
         "awilix": "^4.2.0",
         "delay": "^4.1.0",
@@ -48,8 +46,8 @@
         "xstate": "^4.3.1"
     },
     "devDependencies": {
-        "@arkecosystem/core-p2p": "^2.2.2",
-        "@arkecosystem/core-test-utils": "^2.2.2",
+        "@laroue/core-p2p": "^2.2.2",
+        "@laroue/core-test-utils": "^2.2.2",
         "@types/async": "^2.4.0",
         "@types/lodash.get": "^4.4.4",
         "@types/pluralize": "^0.0.29",

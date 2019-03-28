@@ -20,7 +20,7 @@ describe("Transfer transaction", () => {
         }
     });
 
-    it("should return an array sending 20 ark", () => {
+    it("should return an array sending 20 mlc", () => {
         for (const transaction of transactions) {
             expect(transaction).toMatchObject({ amount });
         }

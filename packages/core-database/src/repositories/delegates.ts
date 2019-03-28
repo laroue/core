@@ -1,6 +1,6 @@
-import { Database } from "@arkecosystem/core-interfaces";
-import { delegateCalculator } from "@arkecosystem/core-utils";
-import { orderBy } from "@arkecosystem/utils";
+import { Database } from "@laroue/core-interfaces";
+import { delegateCalculator } from "@laroue/core-utils";
+import { orderBy } from "@laroue/utils";
 import limitRows from "./utils/limit-rows";
 import { sortEntries } from "./utils/sort-entries";
 

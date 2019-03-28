@@ -1,4 +1,4 @@
-import { Bignum } from "@arkecosystem/crypto";
+import { Bignum } from "@laroue/crypto";
 import "jest-extended";
 import { bignumify } from "../src/bignumify";
 

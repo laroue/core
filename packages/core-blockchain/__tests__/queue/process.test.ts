@@ -1,4 +1,4 @@
-import "@arkecosystem/core-test-utils";
+import "@laroue/core-test-utils";
 import { asValue } from "awilix";
 import delay from "delay";
 import { blocks2to100 } from "../../../core-test-utils/src/fixtures/testnet/blocks2to100";

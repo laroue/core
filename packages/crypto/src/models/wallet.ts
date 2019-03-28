@@ -6,7 +6,7 @@ import { IBlockData } from "./block";
 import { IMultiSignatureAsset, ITransactionData } from "./transaction";
 
 /**
- * TODO copy some parts to ArkDocs
+ * TODO copy some parts to Docs
  * @classdesc This class holds the wallet data, verifies it and applies the
  * transaction and blocks to it
  *

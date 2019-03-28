@@ -14,7 +14,7 @@ Bignum.config({ DECIMAL_PLACES: 0 });
  * Get human readable string from satoshis
  */
 export function formatSatoshi(amount: Bignum | number | string): string {
-    const localeString = (+amount / SATOSHI).toLocaleString("en", {
+    const localeString = (+amount / SATOSHI).toLocaleString("fr", {
         minimumFractionDigits: 0,
         maximumFractionDigits: 8,
     });

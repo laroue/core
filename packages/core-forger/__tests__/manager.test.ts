@@ -1,8 +1,8 @@
-import { generators } from "@arkecosystem/core-test-utils";
+import { generators } from "@laroue/core-test-utils";
 import "jest-extended";
 
-import { NetworkState, NetworkStateStatus } from "@arkecosystem/core-p2p";
-import { Bignum, models } from "@arkecosystem/crypto";
+import { NetworkState, NetworkStateStatus } from "@laroue/core-p2p";
+import { Bignum, models } from "@laroue/crypto";
 import { testnet } from "../../crypto/src/networks";
 import { defaults } from "../src/defaults";
 import { ForgerManager } from "../src/manager";
@@ -125,7 +125,7 @@ describe("Forger Manager", () => {
         it("should be ok", async () => {
             forgeManager.delegates = [
                 {
-                    username: "arkxdev",
+                    username: "mlcxdev",
                     publicKey: "0310ad026647eed112d1a46145eed58b8c19c67c505a67f1199361a511ce7860c0",
                 },
             ];
@@ -135,7 +135,7 @@ describe("Forger Manager", () => {
             );
 
             expect(forger).toBeObject();
-            expect(forger.username).toBe("arkxdev");
+            expect(forger.username).toBe("mlcxdev");
             expect(forger.publicKey).toBe("0310ad026647eed112d1a46145eed58b8c19c67c505a67f1199361a511ce7860c0");
         });
     });

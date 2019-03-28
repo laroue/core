@@ -1,5 +1,5 @@
-import { app } from "@arkecosystem/core-container";
-import { client, NetworkManager, transactionBuilder } from "@arkecosystem/crypto";
+import { app } from "@laroue/core-container";
+import { client, NetworkManager, transactionBuilder } from "@laroue/crypto";
 import axios from "axios";
 import "jest-extended";
 import { ApiHelpers } from "../../../core-test-utils/src/helpers/api";

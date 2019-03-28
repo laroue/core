@@ -1,4 +1,4 @@
-import { bignumify } from "@arkecosystem/core-utils";
+import { bignumify } from "@laroue/core-utils";
 
 export function generateRound(delegates, round) {
     return delegates.map(delegate => ({

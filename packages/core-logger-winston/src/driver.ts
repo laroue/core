@@ -1,4 +1,4 @@
-import { AbstractLogger } from "@arkecosystem/core-logger";
+import { AbstractLogger } from "@laroue/core-logger";
 import "colors";
 import isEmpty from "lodash/isEmpty";
 import { inspect } from "util";

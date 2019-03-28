@@ -16,7 +16,7 @@ beforeAll(async () => {
     });
 });
 
-describe("Ark codec testing", () => {
+describe("Codec testing", () => {
     test("Encode/Decode single block", () => {
         console.time("singleblock");
         const encoded = msgpack.encode(blocks[1], { codec: codec.blocks });
@@ -51,7 +51,7 @@ describe("Ark codec testing", () => {
     });
 
     test("Encode/Decode transfer transactions", () => {
-        console.time("transactions ark transfer");
+        console.time("transactions mlc transfer");
         const properties = [
             "id",
             "version",
@@ -78,7 +78,7 @@ describe("Ark codec testing", () => {
                 expect(dest).toEqual(source);
             }
         }
-        console.timeEnd("transactions ark transfer");
+        console.timeEnd("transactions mlc transfer");
     });
 
     test("Encode/Decode transactions other than transfer", () => {

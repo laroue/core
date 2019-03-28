@@ -1,6 +1,6 @@
-import { Database } from "@arkecosystem/core-interfaces";
-import { delegateCalculator } from "@arkecosystem/core-utils";
-import { Bignum, constants, crypto, models } from "@arkecosystem/crypto";
+import { Database } from "@laroue/core-interfaces";
+import { delegateCalculator } from "@laroue/core-utils";
+import { Bignum, constants, crypto, models } from "@laroue/crypto";
 import genesisBlockTestnet from "../../../core-test-utils/src/config/testnet/genesisBlock.json";
 import { DelegatesRepository, WalletsRepository } from "../../src";
 import { DatabaseService } from "../../src/database-service";

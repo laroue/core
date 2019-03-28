@@ -1,6 +1,6 @@
-import { app } from "@arkecosystem/core-container";
-import { Blockchain } from "@arkecosystem/core-interfaces";
-import { Bignum } from "@arkecosystem/crypto";
+import { app } from "@laroue/core-container";
+import { Blockchain } from "@laroue/core-interfaces";
+import { Bignum } from "@laroue/crypto";
 
 const BignumMod = Bignum.clone({ DECIMAL_PLACES: 2 });
 

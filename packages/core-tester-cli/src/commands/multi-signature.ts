@@ -1,9 +1,9 @@
-import { client } from "@arkecosystem/crypto";
+import { client } from "@laroue/crypto";
 import { flags } from "@oclif/command";
 import take from "lodash/take";
 import pluralize from "pluralize";
 import { customFlags } from "../flags";
-import { arkToSatoshi, generateTransactions, logger, parseFee, satoshiToArk } from "../utils";
+import { mlcToSatoshi, generateTransactions, logger, parseFee, satoshiToMlc } from "../utils";
 import { BaseCommand } from "./command";
 import { TransferCommand } from "./transfer";
 
@@ -146,7 +146,7 @@ export class MultiSignatureCommand extends BaseCommand {
             transactions.push(transaction);
 
             if (log) {
-                logger.info(`${i} ==> ${transaction.id}, ${wallet.address} (fee: ${satoshiToArk(transaction.fee)})`);
+                logger.info(`${i} ==> ${transaction.id}, ${wallet.address} (fee: ${satoshiToMlc(transaction.fee)})`);
             }
         });
 
@@ -162,7 +162,7 @@ export class MultiSignatureCommand extends BaseCommand {
     public async testSendWithSignatures(wallets, approvalWallets = []) {
         logger.info("Sending transactions with signatures");
 
-        const transactions = generateTransactions(arkToSatoshi(2), wallets, approvalWallets, {
+        const transactions = generateTransactions(mlcToSatoshi(2), wallets, approvalWallets, {
             config: this.config,
             ...this.options,
         });
@@ -192,7 +192,7 @@ export class MultiSignatureCommand extends BaseCommand {
             `Sending transactions with ${min} (min) of ${pluralize("signature", approvalWallets.length, true)}`,
         );
 
-        const transactions = generateTransactions(arkToSatoshi(2), wallets, take(approvalWallets, min), {
+        const transactions = generateTransactions(mlcToSatoshi(2), wallets, take(approvalWallets, min), {
             config: this.config,
             ...this.options,
         });
@@ -223,7 +223,7 @@ export class MultiSignatureCommand extends BaseCommand {
             `Sending transactions with ${max} (below min) of ${pluralize("signature", approvalWallets.length, true)}`,
         );
 
-        const transactions = generateTransactions(arkToSatoshi(2), wallets, take(approvalWallets, max), {
+        const transactions = generateTransactions(mlcToSatoshi(2), wallets, take(approvalWallets, max), {
             config: this.config,
             ...this.options,
         });
@@ -256,7 +256,7 @@ export class MultiSignatureCommand extends BaseCommand {
     public async testSendWithoutSignatures(wallets) {
         logger.info("Sending transactions without signatures");
 
-        const transactions = generateTransactions(arkToSatoshi(2), wallets, [], {
+        const transactions = generateTransactions(mlcToSatoshi(2), wallets, [], {
             config: this.config,
             ...this.options,
         });
@@ -289,7 +289,7 @@ export class MultiSignatureCommand extends BaseCommand {
     public async testSendWithEmptySignatures(wallets) {
         logger.info("Sending transactions with empty signatures");
 
-        const transactions = generateTransactions(arkToSatoshi(2), wallets, [], {
+        const transactions = generateTransactions(mlcToSatoshi(2), wallets, [], {
             config: this.config,
             ...this.options,
         });

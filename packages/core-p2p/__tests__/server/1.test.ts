@@ -1,5 +1,5 @@
-import { generateTransfers } from "@arkecosystem/core-test-utils/src/generators/transactions/transfer";
-import { models } from "@arkecosystem/crypto";
+import { generateTransfers } from "@laroue/core-test-utils/src/generators/transactions/transfer";
+import { models } from "@laroue/crypto";
 import { setUp, tearDown } from "../__support__/setup";
 import { utils } from "../__support__/utils";
 import fullBlock from "../fixtures/block-with-transactions.json";
@@ -13,7 +13,7 @@ beforeAll(async () => {
 
     // Create the genesis block after the setup has finished or else it uses a potentially
     // wrong network config.
-    genesisBlock = new Block(require("@arkecosystem/core-test-utils/src/config/testnet/genesisBlock.json"));
+    genesisBlock = new Block(require("@laroue/core-test-utils/src/config/testnet/genesisBlock.json"));
 });
 
 afterAll(async () => {

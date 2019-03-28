@@ -1,6 +1,6 @@
 import "jest-extended";
 
-import { generators } from "@arkecosystem/core-test-utils";
+import { generators } from "@laroue/core-test-utils";
 const { generateSecondSignature } = generators;
 
 import { SATOSHI } from "../../src/constants";

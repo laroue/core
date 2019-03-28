@@ -1,4 +1,4 @@
-import { constants, slots } from "@arkecosystem/crypto";
+import { constants, slots } from "@laroue/crypto";
 import dayjs from "dayjs-ext";
 import partition from "lodash/partition";
 import snakeCase from "lodash/snakeCase";

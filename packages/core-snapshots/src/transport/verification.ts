@@ -1,6 +1,6 @@
-import { app } from "@arkecosystem/core-container";
-import { Logger } from "@arkecosystem/core-interfaces";
-import { crypto, models } from "@arkecosystem/crypto";
+import { app } from "@laroue/core-container";
+import { Logger } from "@laroue/core-interfaces";
+import { crypto, models } from "@laroue/crypto";
 import createHash from "create-hash";
 import { camelizeKeys } from "xcase";
 

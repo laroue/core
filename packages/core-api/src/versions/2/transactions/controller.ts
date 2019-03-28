@@ -1,11 +1,11 @@
-import { app } from "@arkecosystem/core-container";
-import { P2P } from "@arkecosystem/core-interfaces";
+import { app } from "@laroue/core-container";
+import { P2P } from "@laroue/core-interfaces";
 import Boom from "boom";
 import Hapi from "hapi";
 import { Controller } from "../shared/controller";
 
-import { TransactionGuard, TransactionPool } from "@arkecosystem/core-transaction-pool";
-import { constants } from "@arkecosystem/crypto";
+import { TransactionGuard, TransactionPool } from "@laroue/core-transaction-pool";
+import { constants } from "@laroue/crypto";
 
 export class TransactionsController extends Controller {
     private transactionPool = app.resolvePlugin<TransactionPool>("transactionPool");

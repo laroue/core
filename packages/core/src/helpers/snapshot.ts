@@ -1,4 +1,4 @@
-import { app } from "@arkecosystem/core-container";
+import { app } from "@laroue/core-container";
 
 // tslint:disable-next-line:no-var-requires
 const { version } = require("../../package.json");
@@ -8,10 +8,10 @@ export async function setUpLite(options) {
 
     await app.setUp(version, options, {
         include: [
-            "@arkecosystem/core-logger",
-            "@arkecosystem/core-logger-winston",
-            "@arkecosystem/core-event-emitter",
-            "@arkecosystem/core-snapshots",
+            "@laroue/core-logger",
+            "@laroue/core-logger-winston",
+            "@laroue/core-event-emitter",
+            "@laroue/core-snapshots",
         ],
     });
 

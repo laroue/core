@@ -4,7 +4,7 @@ import axios from "axios";
 import MockAdapter from "axios-mock-adapter";
 import superheroes from "superheroes";
 import { DelegateRegistrationCommand } from "../../src/commands/delegate-registration";
-import { arkToSatoshi } from "../../src/utils";
+import { mlcToSatoshi } from "../../src/utils";
 import { toFlags } from "../shared";
 
 const mockAxios = new MockAdapter(axios);
@@ -46,7 +46,7 @@ describe("Commands - Delegate Registration", () => {
             {
                 transactions: [
                     expect.objectContaining({
-                        fee: arkToSatoshi(opts.delegateFee),
+                        fee: mlcToSatoshi(opts.delegateFee),
                         asset: {
                             delegate: {
                                 username: expectedDelegateName,

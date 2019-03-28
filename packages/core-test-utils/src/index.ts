@@ -1,4 +1,4 @@
-import "@arkecosystem/core-jest-matchers";
+import "@laroue/core-jest-matchers";
 
 import * as fixtures from "./fixtures";
 import * as generators from "./generators";

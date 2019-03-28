@@ -1,6 +1,6 @@
 import "../../../src/transactions/types/multi-signature";
 
-import { constants } from "@arkecosystem/crypto";
+import { constants } from "@laroue/crypto";
 const { TransactionTypes } = constants;
 
 describe(".toBeMultiSignatureType", () => {

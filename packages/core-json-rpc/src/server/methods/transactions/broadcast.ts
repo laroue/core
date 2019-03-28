@@ -1,4 +1,4 @@
-import { crypto } from "@arkecosystem/crypto";
+import { crypto } from "@laroue/crypto";
 import Boom from "boom";
 import Joi from "joi";
 import { database } from "../../services/database";

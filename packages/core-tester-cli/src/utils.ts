@@ -1,5 +1,5 @@
-import { bignumify } from "@arkecosystem/core-utils";
-import { Bignum, client, formatSatoshi } from "@arkecosystem/crypto";
+import { bignumify } from "@laroue/core-utils";
+import { Bignum, client, formatSatoshi } from "@laroue/crypto";
 import axios from "axios";
 import pino from "pino";
 
@@ -92,7 +92,7 @@ export function generateTransactions(
 
         if (options.log) {
             logger.info(
-                `${i} ==> ${transaction.id}, ${transaction.recipientId} (fee: ${this.satoshiToArk(transaction.fee)})`,
+                `${i} ==> ${transaction.id}, ${transaction.recipientId} (fee: ${this.satoshiToMlc(transaction.fee)})`,
             );
         }
     });
@@ -124,19 +124,19 @@ export function parseFee(fee): Bignum {
 }
 
 /**
- * Convert ARK to Satoshi.
- * @param  {Number} ark
+ * Convert MLC to Satoshi.
+ * @param  {Number} mlc
  * @return {Bignum}
  */
-export function arkToSatoshi(ark) {
-    return bignumify(ark * 1e8);
+export function mlcToSatoshi(mlc) {
+    return bignumify(mlc * 1e8);
 }
 
 /**
- * Convert Satoshi to ARK.
+ * Convert Satoshi to MLC.
  * @param  {Bignum} satoshi
  * @return {String}
  */
-export function satoshiToArk(satoshi) {
+export function satoshiToMlc(satoshi) {
     return formatSatoshi(satoshi);
 }

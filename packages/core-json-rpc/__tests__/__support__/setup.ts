@@ -1,4 +1,4 @@
-import { app } from "@arkecosystem/core-container";
+import { app } from "@laroue/core-container";
 import { registerWithContainer, setUpContainer } from "../../../core-test-utils/src/helpers/container";
 
 jest.setTimeout(60000);
@@ -17,10 +17,10 @@ export async function setUp() {
 
     await setUpContainer({
         exclude: [
-            "@arkecosystem/core-webhooks",
-            "@arkecosystem/core-graphql",
-            "@arkecosystem/core-forger",
-            "@arkecosystem/core-json-rpc",
+            "@laroue/core-webhooks",
+            "@laroue/core-graphql",
+            "@laroue/core-forger",
+            "@laroue/core-json-rpc",
         ],
     });
 

@@ -1,4 +1,4 @@
-import { AbstractLogger } from "@arkecosystem/core-logger";
+import { AbstractLogger } from "@laroue/core-logger";
 import * as capcon from "capture-console";
 import "jest-extended";
 import * as winston from "winston";

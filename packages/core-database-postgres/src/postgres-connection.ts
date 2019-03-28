@@ -1,7 +1,7 @@
-import { app } from "@arkecosystem/core-container";
-import { Database, EventEmitter, Logger } from "@arkecosystem/core-interfaces";
-import { roundCalculator } from "@arkecosystem/core-utils";
-import { models } from "@arkecosystem/crypto";
+import { app } from "@laroue/core-container";
+import { Database, EventEmitter, Logger } from "@laroue/core-interfaces";
+import { roundCalculator } from "@laroue/core-utils";
+import { models } from "@laroue/crypto";
 import fs from "fs";
 import chunk from "lodash/chunk";
 import path from "path";
@@ -42,7 +42,7 @@ export class PostgresConnection implements Database.IDatabaseConnection {
         if (fs.existsSync(spvPath)) {
             (fs as any).removeSync(spvPath);
 
-            this.logger.info("Ark Core ended unexpectedly - resuming from where we left off :runner:");
+            this.logger.info("Core ended unexpectedly - resuming from where we left off :runner:");
 
             return true;
         }

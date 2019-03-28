@@ -8,25 +8,25 @@ export class StartCommand extends AbstractStartCommand {
 
     public static examples: string[] = [
         `Run core with a daemon
-$ ark core:start
+$ mlc core:start
 `,
         `Run core as genesis
-$ ark core:start --networkStart
+$ mlc core:start --networkStart
 `,
         `Disable any discovery by other peers
-$ ark core:start --disableDiscovery
+$ mlc core:start --disableDiscovery
 `,
         `Skip the initial discovery
-$ ark core:start --skipDiscovery
+$ mlc core:start --skipDiscovery
 `,
         `Ignore the minimum network reach
-$ ark core:start --ignoreMinimumNetworkReach
+$ mlc core:start --ignoreMinimumNetworkReach
 `,
         `Start a seed
-$ ark core:start --launchMode=seed
+$ mlc core:start --launchMode=seed
 `,
         `Run core without a daemon
-$ ark core:start --no-daemon
+$ mlc core:start --no-daemon
 `,
     ];
 

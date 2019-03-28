@@ -1,7 +1,7 @@
-import { app } from "@arkecosystem/core-container";
-import { Blockchain, Database, EventEmitter, Logger } from "@arkecosystem/core-interfaces";
-import { roundCalculator } from "@arkecosystem/core-utils";
-import { Bignum, constants, crypto as arkCrypto, models } from "@arkecosystem/crypto";
+import { app } from "@laroue/core-container";
+import { Blockchain, Database, EventEmitter, Logger } from "@laroue/core-interfaces";
+import { roundCalculator } from "@laroue/core-utils";
+import { Bignum, constants, crypto as mlcCrypto, models } from "@laroue/crypto";
 import assert from "assert";
 import crypto from "crypto";
 import cloneDeep from "lodash/cloneDeep";
@@ -514,7 +514,7 @@ export class DatabaseService implements Database.IDatabaseService {
     }
 
     public async verifyTransaction(transaction: models.Transaction) {
-        const senderId = arkCrypto.getAddress(transaction.data.senderPublicKey, this.config.get("network.pubKeyHash"));
+        const senderId = mlcCrypto.getAddress(transaction.data.senderPublicKey, this.config.get("network.pubKeyHash"));
 
         const sender = this.walletManager.findByAddress(senderId); // should exist
 

@@ -1,5 +1,5 @@
-import { app } from "@arkecosystem/core-container";
-import { Logger, P2P } from "@arkecosystem/core-interfaces";
+import { app } from "@laroue/core-container";
+import { Logger, P2P } from "@laroue/core-interfaces";
 import axios from "axios";
 import dayjs from "dayjs-ext";
 import Joi from "joi";

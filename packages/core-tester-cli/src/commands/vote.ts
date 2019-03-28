@@ -1,9 +1,9 @@
-import { client } from "@arkecosystem/crypto";
+import { client } from "@laroue/crypto";
 import { flags } from "@oclif/command";
 import sample from "lodash/sample";
 import pluralize from "pluralize";
 import { customFlags } from "../flags";
-import { logger, parseFee, satoshiToArk } from "../utils";
+import { logger, parseFee, satoshiToMlc } from "../utils";
 import { BaseCommand } from "./command";
 import { TransferCommand } from "./transfer";
 
@@ -64,7 +64,7 @@ export class VoteCommand extends BaseCommand {
 
             transactions.push(transaction);
 
-            logger.info(`${i} ==> ${transaction.id}, ${wallet.address} (fee: ${satoshiToArk(transaction.fee)})`);
+            logger.info(`${i} ==> ${transaction.id}, ${wallet.address} (fee: ${satoshiToMlc(transaction.fee)})`);
         });
 
         if (this.options.copy) {

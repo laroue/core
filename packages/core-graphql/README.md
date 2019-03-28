@@ -1,4 +1,4 @@
-# Ark Core - GraphQL
+# Core - GraphQL
 
 <p align="center">
     <img src="../../banner.png?sanitize=true" />
@@ -6,19 +6,17 @@
 
 ## Documentation
 
-You can find installation instructions and detailed instructions on how to use this package at the [dedicated documentation site](https://docs.ark.io/guidebook/core/plugins/core-graphql.html).
+You can find installation instructions and detailed instructions on how to use this package at the [dedicated documentation site](https://docs.laroue.org/guidebook/core/plugins/core-graphql.html).
 
 ## Security
 
-If you discover a security vulnerability within this package, please send an e-mail to security@ark.io. All security vulnerabilities will be promptly addressed.
+If you discover a security vulnerability within this package, please send an e-mail to security@laroue.org. All security vulnerabilities will be promptly addressed.
 
 ## Credits
 
--   [Brian Faust](https://github.com/faustbrian)
--   [Joshua Noack](https://github.com/supaiku0)
--   [Lúcio Rubens](https://github.com/luciorubeens)
+-   [Luc Talarico](https::/github.com/laroue)
 -   [All Contributors](../../../../contributors)
 
 ## License
 
-[MIT](LICENSE) © [ArkEcosystem](https://ark.io)
+[MIT](LICENSE) © [LaRoue](https://laroue.org)

@@ -1,4 +1,4 @@
-import { NetworkManager } from "@arkecosystem/crypto";
+import { NetworkManager } from "@laroue/crypto";
 import expandHomeDir from "expand-home-dir";
 import Joi from "joi";
 import { resolve } from "path";

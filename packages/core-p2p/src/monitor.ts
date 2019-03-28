@@ -1,8 +1,8 @@
 /* tslint:disable:max-line-length */
 
-import { app } from "@arkecosystem/core-container";
-import { Blockchain, Database, EventEmitter, Logger, P2P } from "@arkecosystem/core-interfaces";
-import { slots } from "@arkecosystem/crypto";
+import { app } from "@laroue/core-container";
+import { Blockchain, Database, EventEmitter, Logger, P2P } from "@laroue/core-interfaces";
+import { slots } from "@laroue/crypto";
 import dayjs from "dayjs-ext";
 import delay from "delay";
 import fs from "fs";

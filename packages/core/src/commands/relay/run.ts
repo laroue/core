@@ -1,4 +1,4 @@
-import { app } from "@arkecosystem/core-container";
+import { app } from "@laroue/core-container";
 import { CommandFlags } from "../../types";
 import { BaseCommand } from "../command";
 
@@ -7,22 +7,22 @@ export class RunCommand extends BaseCommand {
 
     public static examples: string[] = [
         `Run a relay
-$ ark relay:run
+$ mlc relay:run
 `,
         `Run a genesis relay
-$ ark relay:run --networkStart
+$ mlc relay:run --networkStart
 `,
         `Disable any discovery by other peers
-$ ark relay:run --disableDiscovery
+$ mlc relay:run --disableDiscovery
 `,
         `Skip the initial discovery
-$ ark relay:run --skipDiscovery
+$ mlc relay:run --skipDiscovery
 `,
         `Ignore the minimum network reach
-$ ark relay:run --ignoreMinimumNetworkReach
+$ mlc relay:run --ignoreMinimumNetworkReach
 `,
         `Start a seed
-$ ark relay:run --launchMode=seed
+$ mlc relay:run --launchMode=seed
 `,
     ];
 
@@ -35,10 +35,10 @@ $ ark relay:run --launchMode=seed
         const { flags } = await this.parseWithNetwork(RunCommand);
 
         await this.buildApplication(app, flags, {
-            exclude: ["@arkecosystem/core-forger"],
+            exclude: ["@laroue/core-forger"],
             options: {
-                "@arkecosystem/core-p2p": this.buildPeerOptions(flags),
-                "@arkecosystem/core-blockchain": {
+                "@laroue/core-p2p": this.buildPeerOptions(flags),
+                "@laroue/core-blockchain": {
                     networkStart: flags.networkStart,
                 },
             },

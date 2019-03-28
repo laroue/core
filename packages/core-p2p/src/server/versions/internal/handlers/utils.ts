@@ -1,5 +1,5 @@
-import { app } from "@arkecosystem/core-container";
-import { Blockchain, EventEmitter } from "@arkecosystem/core-interfaces";
+import { app } from "@laroue/core-container";
+import { Blockchain, EventEmitter } from "@laroue/core-interfaces";
 
 const emitter = app.resolvePlugin<EventEmitter.EventEmitter>("event-emitter");
 

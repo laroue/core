@@ -1,4 +1,4 @@
-import { Database } from "@arkecosystem/core-interfaces";
+import { Database } from "@laroue/core-interfaces";
 /**
  * Return some rows by an offset and a limit.
  */

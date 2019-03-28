@@ -1,9 +1,9 @@
 {
-    "name": "@arkecosystem/core-snapshots",
-    "description": "Provides live local streamed snapshots functionality for ARK Core",
+    "name": "@laroue/core-snapshots",
+    "description": "Provides live local streamed snapshots functionality for Core",
     "version": "2.2.2",
     "contributors": [
-        "Kristjan Košič <chris@ark.io>"
+        "Luc Talarico <lta@laroue.org>"
     ],
     "license": "MIT",
     "main": "dist/index",
@@ -32,10 +32,10 @@
         "updates": "../../node_modules/npm-check-updates/bin/npm-check-updates -a"
     },
     "dependencies": {
-        "@arkecosystem/core-container": "^2.2.2",
-        "@arkecosystem/core-database-postgres": "^2.2.2",
-        "@arkecosystem/core-interfaces": "^2.2.2",
-        "@arkecosystem/crypto": "^2.2.2",
+        "@laroue/core-container": "^2.2.2",
+        "@laroue/core-database-postgres": "^2.2.2",
+        "@laroue/core-interfaces": "^2.2.2",
+        "@laroue/crypto": "^2.2.2",
         "JSONStream": "^1.3.5",
         "bluebird": "^3.5.3",
         "cpy-cli": "^2.0.0",

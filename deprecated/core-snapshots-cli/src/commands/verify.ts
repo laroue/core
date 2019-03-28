@@ -1,6 +1,6 @@
-import { app } from "@arkecosystem/core-container";
-import { Logger } from "@arkecosystem/core-interfaces";
-import { SnapshotManager } from "@arkecosystem/core-snapshots";
+import { app } from "@laroue/core-container";
+import { Logger } from "@laroue/core-interfaces";
+import { SnapshotManager } from "@laroue/core-snapshots";
 import { flags } from "@oclif/command";
 import fs from "fs-extra";
 import { setUpLite } from "../utils";

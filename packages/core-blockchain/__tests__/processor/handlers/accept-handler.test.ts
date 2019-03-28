@@ -1,7 +1,7 @@
-import "@arkecosystem/core-test-utils";
+import "@laroue/core-test-utils";
 import { AcceptBlockHandler } from "../../../src/processor/handlers";
 
-import { models } from "@arkecosystem/crypto";
+import { models } from "@laroue/crypto";
 import { blocks2to100 } from "../../../../core-test-utils/src/fixtures/testnet/blocks2to100";
 import { Blockchain } from "../../../src/blockchain";
 import { BlockProcessorResult } from "../../../src/processor";

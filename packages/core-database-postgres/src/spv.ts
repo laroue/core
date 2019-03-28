@@ -1,8 +1,8 @@
-import { Bignum, models } from "@arkecosystem/crypto";
+import { Bignum, models } from "@laroue/crypto";
 const { Transaction } = models;
 
-import { app } from "@arkecosystem/core-container";
-import { Database, Logger } from "@arkecosystem/core-interfaces";
+import { app } from "@laroue/core-container";
+import { Database, Logger } from "@laroue/core-interfaces";
 import { queries } from "./queries";
 import { QueryExecutor } from "./sql/query-executor";
 

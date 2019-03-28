@@ -1,4 +1,4 @@
-import { Container } from "@arkecosystem/core-interfaces";
+import { Container } from "@laroue/core-interfaces";
 import bugsnag from "@bugsnag/js";
 import { defaults } from "./defaults";
 

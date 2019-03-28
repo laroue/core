@@ -1,4 +1,4 @@
-import { Container as container, EventEmitter, Logger } from "@arkecosystem/core-interfaces";
+import { Container as container, EventEmitter, Logger } from "@laroue/core-interfaces";
 import { createContainer, Resolver } from "awilix";
 import { execSync } from "child_process";
 import delay from "delay";

@@ -1,6 +1,6 @@
-import { app } from "@arkecosystem/core-container";
-import { Database, Logger, TransactionPool as transactionPool } from "@arkecosystem/core-interfaces";
-import { configManager, constants, models, slots } from "@arkecosystem/crypto";
+import { app } from "@laroue/core-container";
+import { Database, Logger, TransactionPool as transactionPool } from "@laroue/core-interfaces";
+import { configManager, constants, models, slots } from "@laroue/crypto";
 import pluralize from "pluralize";
 import { TransactionPool } from "./connection";
 import { dynamicFeeMatcher } from "./dynamic-fee";

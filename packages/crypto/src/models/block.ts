@@ -39,7 +39,7 @@ export interface IBlockData {
 }
 
 /**
- * TODO copy some parts to ArkDocs
+ * TODO copy some parts to Docs
  * @classdesc This model holds the block data, its verification and serialization
  *
  * A Block model stores on the db:

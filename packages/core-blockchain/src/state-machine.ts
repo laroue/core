@@ -1,10 +1,10 @@
 /* tslint:disable:jsdoc-format max-line-length */
 
-import { app } from "@arkecosystem/core-container";
-import { EventEmitter, Logger } from "@arkecosystem/core-interfaces";
+import { app } from "@laroue/core-container";
+import { EventEmitter, Logger } from "@laroue/core-interfaces";
 
-import { roundCalculator } from "@arkecosystem/core-utils";
-import { isException, models, slots } from "@arkecosystem/crypto";
+import { roundCalculator } from "@laroue/core-utils";
+import { isException, models, slots } from "@laroue/crypto";
 
 import pluralize from "pluralize";
 import { config as localConfig } from "./config";
@@ -152,7 +152,7 @@ blockchainMachine.actionMap = (blockchain: Blockchain) => ({
     },
 
     exitApp() {
-        app.forceExit("Failed to startup blockchain. Exiting Ark Core! :rotating_light:");
+        app.forceExit("Failed to startup blockchain. Exiting Core! :rotating_light:");
     },
 
     async init() {

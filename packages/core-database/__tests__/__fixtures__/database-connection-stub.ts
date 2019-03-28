@@ -1,7 +1,7 @@
 // tslint:disable:no-empty
 
-import { Database } from "@arkecosystem/core-interfaces";
-import { models } from "@arkecosystem/crypto";
+import { Database } from "@laroue/core-interfaces";
+import { models } from "@laroue/crypto";
 
 export class DatabaseConnectionStub implements Database.IDatabaseConnection {
     public blocksRepository: Database.IBlocksRepository;

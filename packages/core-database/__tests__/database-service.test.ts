@@ -1,5 +1,5 @@
-import { Container, Database, EventEmitter } from "@arkecosystem/core-interfaces";
-import { Bignum, constants, models, transactionBuilder } from "@arkecosystem/crypto";
+import { Container, Database, EventEmitter } from "@laroue/core-interfaces";
+import { Bignum, constants, models, transactionBuilder } from "@laroue/crypto";
 import "jest-extended";
 import { WalletManager } from "../src";
 import { DatabaseService } from "../src/database-service";
@@ -21,7 +21,7 @@ let emitter: EventEmitter.EventEmitter;
 beforeAll(async () => {
     container = await setUp();
     emitter = container.resolvePlugin<EventEmitter.EventEmitter>("event-emitter");
-    genesisBlock = new Block(require("@arkecosystem/core-test-utils/src/config/testnet/genesisBlock.json"));
+    genesisBlock = new Block(require("@laroue/core-test-utils/src/config/testnet/genesisBlock.json"));
     connection = new DatabaseConnectionStub();
     walletManager = new WalletManager();
 });

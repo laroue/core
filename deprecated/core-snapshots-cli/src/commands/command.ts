@@ -10,7 +10,7 @@ export abstract class BaseCommand extends Command {
         }),
         token: flags.string({
             description: "token name",
-            default: "ark",
+            default: "mlc",
         }),
         network: flags.string({
             description: "token network",

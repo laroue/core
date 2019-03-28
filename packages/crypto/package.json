@@ -1,14 +1,9 @@
 {
-    "name": "@arkecosystem/crypto",
-    "description": "Crypto utilities for the Ark Blockchain",
+    "name": "@laroue/crypto",
+    "description": "Crypto utilities for the Blockchain",
     "version": "2.2.2",
     "contributors": [
-        "François-Xavier Thoorens <fx.thoorens@ark.io>",
-        "Brian Faust <brian@ark.io>",
-        "Alex Barnsley <alex@ark.io>",
-        "Lúcio Rubens <lucio@ark.io>",
-        "Juan A. Martín <juan@ark.io>",
-        "Joshua Noack <joshua@ark.io>"
+        "Luc Talarico <lta@laroue.org>"
     ],
     "license": "MIT",
     "main": "dist/index",

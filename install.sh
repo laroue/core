@@ -54,36 +54,36 @@ else
     exit 1;
 fi
 
-if [[ $(locale -a | grep ^en_US.UTF-8) ]] || [[ $(locale -a | grep ^en_US.utf8) ]]; then
-    if ! $(grep -E "(en_US.UTF-8)" "$HOME/.bashrc"); then
+if [[ $(locale -a | grep ^fr_FR.UTF-8) ]] || [[ $(locale -a | grep ^fr_FR.utf8) ]]; then
+    if ! $(grep -E "(fr_FR.UTF-8)" "$HOME/.bashrc"); then
         # Setting the bashrc locale
-        echo "export LC_ALL=en_US.UTF-8" >> "$HOME/.bashrc"
-        echo "export LANG=en_US.UTF-8" >> "$HOME/.bashrc"
-        echo "export LANGUAGE=en_US.UTF-8" >> "$HOME/.bashrc"
+        echo "export LC_ALL=fr_FR.UTF-8" >> "$HOME/.bashrc"
+        echo "export LANG=fr_FR.UTF-8" >> "$HOME/.bashrc"
+        echo "export LANGUAGE=fr_FR.UTF-8" >> "$HOME/.bashrc"
 
         # Setting the current shell locale
-        export LC_ALL="en_US.UTF-8"
-        export LANG="en_US.UTF-8"
-        export LANGUAGE="en_US.UTF-8"
+        export LC_ALL="fr_FR.UTF-8"
+        export LANG="fr_FR.UTF-8"
+        export LANGUAGE="fr_FR.UTF-8"
     fi
 else
-    # Install en_US.UTF-8 Locale
+    # Install fr_FR.UTF-8 Locale
     if [[ ! -z $DEB ]]; then
-        sudo locale-gen en_US.UTF-8
-        sudo update-locale LANG=en_US.UTF-8
+        sudo locale-gen fr_FR.UTF-8
+        sudo update-locale LANG=fr_FR.UTF-8
     elif [[ ! -z $RPM ]]; then
-        sudo localedef -c -i en_US -f UTF-8 en_US.UTF-8
+        sudo localedef -c -i fr_FR -f UTF-8 fr_FR.UTF-8
     fi
 
     # Setting the current shell locale
-    export LC_ALL="en_US.UTF-8"
-    export LANG="en_US.UTF-8"
-    export LANGUAGE="en_US.UTF-8"
+    export LC_ALL="fr_FR.UTF-8"
+    export LANG="fr_FR.UTF-8"
+    export LANGUAGE="fr_FR.UTF-8"
 
     # Setting the bashrc locale
-    echo "export LC_ALL=en_US.UTF-8" >> "$HOME/.bashrc"
-    echo "export LANG=en_US.UTF-8" >> "$HOME/.bashrc"
-    echo "export LANGUAGE=en_US.UTF-8" >> "$HOME/.bashrc"
+    echo "export LC_ALL=fr_FR.UTF-8" >> "$HOME/.bashrc"
+    echo "export LANG=fr_FR.UTF-8" >> "$HOME/.bashrc"
+    echo "export LANGUAGE=fr_FR.UTF-8" >> "$HOME/.bashrc"
 fi
 
 heading "Installing system dependencies..."
@@ -199,14 +199,14 @@ fi
 
 success "Installed system updates!"
 
-heading "Installing Ark Core..."
+heading "Installing Core..."
 
-yarn global add @arkecosystem/core
+yarn global add @laroue/core
 echo 'export PATH=$(yarn global bin):$PATH' >> ~/.bashrc
 export PATH=$(yarn global bin):$PATH
-ark config:publish
+mlc config:publish
 
-success "Installed Ark Core!"
+success "Core installed!"
 
 # setup postgres username, password and database
 read -p "Would you like to configure the database? [y/N]: " choice
@@ -216,9 +216,9 @@ if [[ "$choice" =~ ^(yes|y|Y) ]]; then
     read -p "Enter the database password: " databasePassword
     read -p "Enter the database name: " databaseName
 
-    ark env:set CORE_DB_USERNAME $databaseUsername
-    ark env:set CORE_DB_PASSWORD $databasePassword
-    ark env:set CORE_DB_DATABASE $databaseName
+    mlc env:set CORE_DB_USERNAME $databaseUsername
+    mlc env:set CORE_DB_PASSWORD $databasePassword
+    mlc env:set CORE_DB_DATABASE $databaseName
 
     userExists=$(sudo -i -u postgres psql -c "SELECT * FROM pg_user WHERE usename = '${databaseUsername}'" | grep -c "1 row")
     databaseExists=$(sudo -i -u postgres psql -tAc "SELECT 1 FROM pg_database WHERE datname = '${databaseName}'")

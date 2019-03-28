@@ -1,8 +1,8 @@
 /* tslint:disable:max-line-length */
 
-import { app } from "@arkecosystem/core-container";
-import { PostgresConnection } from "@arkecosystem/core-database-postgres";
-import { Logger } from "@arkecosystem/core-interfaces";
+import { app } from "@laroue/core-container";
+import { PostgresConnection } from "@laroue/core-database-postgres";
+import { Logger } from "@laroue/core-interfaces";
 import pick from "lodash/pick";
 
 const logger = app.resolvePlugin<Logger.ILogger>("logger");

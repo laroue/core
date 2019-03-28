@@ -1,7 +1,7 @@
-import { app } from "@arkecosystem/core-container";
-import { WalletManager } from "@arkecosystem/core-database";
-import { Database } from "@arkecosystem/core-interfaces";
-import { constants, crypto, isException, models } from "@arkecosystem/crypto";
+import { app } from "@laroue/core-container";
+import { WalletManager } from "@laroue/core-database";
+import { Database } from "@laroue/core-interfaces";
+import { constants, crypto, isException, models } from "@laroue/crypto";
 
 const { Wallet } = models;
 const { TransactionTypes } = constants;

@@ -1,6 +1,6 @@
-import { Container } from "@arkecosystem/core-interfaces";
-import { generators } from "@arkecosystem/core-test-utils";
-import { configManager, constants, crypto, models, slots } from "@arkecosystem/crypto";
+import { Container } from "@laroue/core-interfaces";
+import { generators } from "@laroue/core-test-utils";
+import { configManager, constants, crypto, models, slots } from "@laroue/crypto";
 import bip39 from "bip39";
 import "jest-extended";
 import { delegates, genesisBlock, wallets, wallets2ndSig } from "../../core-test-utils/src/fixtures/unitnet";

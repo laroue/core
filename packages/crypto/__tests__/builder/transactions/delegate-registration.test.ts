@@ -61,7 +61,7 @@ describe("Delegate Registration Transaction", () => {
         });
     });
 
-    // FIXME problems with ark-js V1
+    // FIXME problems with mlc-js V1
     describe("getStruct", () => {
         beforeEach(() => {
             builder = client

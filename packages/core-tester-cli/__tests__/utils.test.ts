@@ -1,4 +1,4 @@
-import { arkToSatoshi, parseFee, satoshiToArk } from "../src/utils";
+import { mlcToSatoshi, parseFee, satoshiToMlc } from "../src/utils";
 
 describe("Utils", () => {
     describe("parseFee", () => {
@@ -13,21 +13,21 @@ describe("Utils", () => {
         });
     });
 
-    describe("arkToSatoshi", () => {
+    describe("mlcToSatoshi", () => {
         it("should give satoshi", () => {
-            expect(arkToSatoshi(0.00000001).toString()).toBe("1");
-            expect(arkToSatoshi(0.1).toString()).toBe("10000000");
-            expect(arkToSatoshi(1).toString()).toBe("100000000");
-            expect(arkToSatoshi(10).toString()).toBe("1000000000");
+            expect(mlcToSatoshi(0.00000001).toString()).toBe("1");
+            expect(mlcToSatoshi(0.1).toString()).toBe("10000000");
+            expect(mlcToSatoshi(1).toString()).toBe("100000000");
+            expect(mlcToSatoshi(10).toString()).toBe("1000000000");
         });
     });
 
-    describe("satoshiToArk", () => {
-        it("should give ark", () => {
-            expect(satoshiToArk(1)).toBe("0.00000001 DѦ");
-            expect(satoshiToArk(10000000)).toBe("0.1 DѦ");
-            expect(satoshiToArk(100000000)).toBe("1 DѦ");
-            expect(satoshiToArk(1000000000)).toBe("10 DѦ");
+    describe("satoshiToMlc", () => {
+        it("should give mlc", () => {
+            expect(satoshiToMlc(1)).toBe("0.00000001 DѦ");
+            expect(satoshiToMlc(10000000)).toBe("0.1 DѦ");
+            expect(satoshiToMlc(100000000)).toBe("1 DѦ");
+            expect(satoshiToMlc(1000000000)).toBe("10 DѦ");
         });
     });
 });

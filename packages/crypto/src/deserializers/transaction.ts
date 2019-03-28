@@ -10,7 +10,7 @@ import { Bignum } from "../utils";
 
 const { transactionIdFixTable } = configManager.getPreset("mainnet").exceptions;
 
-// Reference: https://github.com/ArkEcosystem/AIPs/blob/master/AIPS/aip-11.md
+// Reference: https://github.com/laroue/AIPs/blob/master/AIPS/aip-11.md
 class TransactionDeserializer {
     public deserialize(serializedHex: string): ITransactionData {
         const transaction = {} as ITransactionData;

@@ -1,4 +1,4 @@
-# Ark - Crypto
+# Crypto
 
 <p align="center">
     <img src="./banner.png?sanitize=true" />
@@ -7,13 +7,13 @@
 ## Installation
 
 ```bash
-yarn add @arkecosystem/crypto
+yarn add @laroue/crypto
 ```
 
 If you want to use the CDN version:
 
 ```html
-<script src="https://unpkg.com/@arkecosystem/crypto/dist/index.umd.js"></script>
+<script src="https://unpkg.com/@laroue/crypto/dist/index.umd.js"></script>
 ```
 
 ## Usage
@@ -21,29 +21,24 @@ If you want to use the CDN version:
 Import the library in node.js:
 
 ```
-import ArkEcosystemCrypto from @arkecosystem/crypto
+import Crypto from @laroue/crypto
 ```
 
 Use the library:
 
 ```
-const constants = ArkEcosystemCrypto.constants
+const constants = Crypto.constants
 ```
 
 ## Security
 
-If you discover a security vulnerability within this package, please send an e-mail to security@ark.io. All security vulnerabilities will be promptly addressed.
+If you discover a security vulnerability within this package, please send an e-mail to security@laroue.org. All security vulnerabilities will be promptly addressed.
 
 ## Credits
 
--   [Alex Barnsley](https://github.com/alexbarnsley)
--   [Brian Faust](https://github.com/faustbrian)
--   [François-Xavier Thoorens](https://github.com/fix)
--   [Joshua Noack](https://github.com/supaiku0)
--   [Juan A. Martín](https://github.com/j-a-m-l)
--   [Lúcio Rubens](https://github.com/luciorubeens)
+-   [Luc Talarico](https::/github.com/laroue)
 -   [All Contributors](../../../../contributors)
 
 ## License
 
-[MIT](LICENSE) © [ArkEcosystem](https://ark.io)
+[MIT](LICENSE) © [LaRoue](https://laroue.org)

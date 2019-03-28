@@ -1,5 +1,5 @@
 /* tslint:disable:max-line-length */
-import { app } from "@arkecosystem/core-container";
+import { app } from "@laroue/core-container";
 import {
     Blockchain as blockchain,
     Database,
@@ -7,8 +7,8 @@ import {
     Logger,
     P2P,
     TransactionPool,
-} from "@arkecosystem/core-interfaces";
-import { models, slots } from "@arkecosystem/crypto";
+} from "@laroue/core-interfaces";
+import { models, slots } from "@laroue/crypto";
 
 import delay from "delay";
 import pluralize from "pluralize";
@@ -75,9 +75,9 @@ export class Blockchain implements blockchain.IBlockchain {
 
         if (this.state.networkStart) {
             logger.warn(
-                "Ark Core is launched in Genesis Start mode. This is usually for starting the first node on the blockchain. Unless you know what you are doing, this is likely wrong. :warning:",
+                "Core is launched in Genesis Start mode. This is usually for starting the first node on the blockchain. Unless you know what you are doing, this is likely wrong. :warning:",
             );
-            logger.info("Starting Ark Core for a new world, welcome aboard :rocket:");
+            logger.info("Starting Core for a new world, welcome aboard :rocket:");
         }
 
         this.actions = stateMachine.actionMap(this);

@@ -1,3 +1,3 @@
-import { Shared } from "@arkecosystem/core-interfaces";
+import { Shared } from "@laroue/core-interfaces";
 
 export const config = new Shared.Config();

@@ -7,7 +7,7 @@ import { Transaction } from "../models";
 import { ITransactionData } from "../models/transaction";
 import { Bignum } from "../utils";
 
-// Reference: https://github.com/ArkEcosystem/AIPs/blob/master/AIPS/aip-11.md
+// Reference: https://github.com/laroue/AIPs/blob/master/AIPS/aip-11.md
 class TransactionSerializer {
     public serialize(transaction: ITransactionData): Buffer {
         const buffer = new ByteBuffer(512, true);
@@ -23,7 +23,7 @@ class TransactionSerializer {
     private serializeCommon(transaction: ITransactionData, buffer: ByteBuffer): void {
         buffer.writeByte(0xff); // fill, to disambiguate from v1
         buffer.writeByte(transaction.version || 0x01); // version
-        buffer.writeByte(transaction.network || configManager.get("pubKeyHash")); // ark = 0x17, devnet = 0x30
+        buffer.writeByte(transaction.network || configManager.get("pubKeyHash")); // ark = 0x17, devnet = 0x30, mlc = ?, ock = ?
         buffer.writeByte(transaction.type);
         buffer.writeUint32(transaction.timestamp);
         buffer.append(transaction.senderPublicKey, "hex");

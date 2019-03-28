@@ -1,18 +1,18 @@
 #!/usr/bin/env bash
 
-rm -rf /home/ark/ark-core
-git clone https://github.com/ArkEcosystem/core -b upgrade /home/ark/ark-core
+rm -rf /home/laroue/core
+git clone https://github.com/laroue/core -b upgrade /home/laroue/core
 
-mkdir /home/ark/.ark
-touch /home/ark/.ark/.env
+mkdir /home/laroue/.mlc
+touch /home/laroue/.mlc/.env
 
-mkdir /home/ark/.ark/config
+mkdir /home/laroue/.mlc/config
 
-mkdir /home/ark/.ark/database
-touch /home/ark/.ark/database/json-rpc.sqlite
-touch /home/ark/.ark/database/transaction-pool.sqlite
-touch /home/ark/.ark/database/webhooks.sqlite
+mkdir /home/laroue/.mlc/database
+touch /home/laroue/.mlc/database/json-rpc.sqlite
+touch /home/laroue/.mlc/database/transaction-pool.sqlite
+touch /home/laroue/.mlc/database/webhooks.sqlite
 
-mkdir /home/ark/.ark/logs
-mkdir /home/ark/.ark/logs/mainnet
-touch /home/ark/.ark/logs/mainnet/test.log
+mkdir /home/laroue/.mlc/logs
+mkdir /home/laroue/.mlc/logs/mainnet
+touch /home/laroue/.mlc/logs/mainnet/test.log

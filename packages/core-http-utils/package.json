@@ -1,9 +1,9 @@
 {
-    "name": "@arkecosystem/core-http-utils",
-    "description": "Http Utilities for Ark Core",
+    "name": "@laroue/core-http-utils",
+    "description": "Http Utilities for Core",
     "version": "2.2.2",
     "contributors": [
-        "Brian Faust <brian@ark.io>"
+        "Luc Talarico <lta@laroue.org>"
     ],
     "license": "MIT",
     "main": "dist/index.js",
@@ -31,7 +31,7 @@
         "updates": "../../node_modules/npm-check-updates/bin/npm-check-updates -a"
     },
     "dependencies": {
-        "@arkecosystem/core-container": "^2.2.2",
+        "@laroue/core-container": "^2.2.2",
         "boom": "^7.3.0",
         "expand-home-dir": "^0.0.3",
         "good": "^8.1.2",

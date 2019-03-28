@@ -1,6 +1,6 @@
 const {
     models
-} = require('@arkecosystem/crypto')
+} = require('@laroue/crypto')
 
 exports.deserialize = data => {
     return models.Transaction.deserialize(data)

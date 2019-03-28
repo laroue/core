@@ -1,5 +1,5 @@
-import { Database } from "@arkecosystem/core-interfaces";
-import { orderBy } from "@arkecosystem/utils";
+import { Database } from "@laroue/core-interfaces";
+import { orderBy } from "@laroue/utils";
 
 export function sortEntries(params: Database.IParameters, entries: any[], defaultValue) {
     const [iteratee, order] = params.orderBy ? params.orderBy.split(":") : defaultValue;

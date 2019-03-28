@@ -1,24 +1,24 @@
-# Ark Core Docker
+# Core Docker
 
 <p align="center">
-    <img src="./ark-core-docker.png" width="100%" height="100%" />
+    <img src="./banner.png" width="100%" height="100%" />
 </p>
 
 ## Introduction
 
-Official Production ready ARK Core images available now at [Docker Hub](https://hub.docker.com/r/arkecosystem/core).
+Official Production ready Core images available now at [Docker Hub](https://hub.docker.com/r/laroue/core).
 
 ## Documentation
 
--   Development : https://docs.ark.io/guidebook/core/development.html
--   Docker : https://docs.ark.io/guidebook/core/docker.html
+-   Development : https://docs.laroue.org/guidebook/core/development.html
+-   Docker : https://docs.laroue.org/guidebook/core/docker.html
 
 ## API Documentation
 
--   API v1 : https://docs.ark.io/api/public/v1/
--   API v2 : https://docs.ark.io/api/public/v2/
+-   API v1 : https://docs.laroue.org/api/public/v1/
+-   API v2 : https://docs.laroue.org/api/public/v2/
 
-## ARK Core Relay
+## Core Relay
 
 Run Relay only node using [Docker Compose](https://docs.docker.com/compose/)
 
@@ -44,7 +44,7 @@ services:
      POSTGRES_DB: core_devnet
      POSTGRES_USER: node
   core:
-    image: arkecosystem/core:devnet
+    image: laroue/core:devnet
     container_name: core-devnet
     restart: always
     ports:
@@ -58,9 +58,9 @@ services:
       - SYS_RESOURCE
       - SYS_TIME
     volumes:
-     - ~/.config/ark-core:/home/node/.config/ark-core
-     - ~/.local/share/ark-core:/home/node/.local/share/ark-core
-     - ~/.local/state/ark-core:/home/node/.local/state/ark-core
+     - ~/.config/core:/home/node/.config/core
+     - ~/.local/share/core:/home/node/.local/share/core
+     - ~/.local/state/core:/home/node/.local/state/core
      - /etc/timezone:/etc/timezone:ro
      - /etc/localtime:/etc/localtime:ro
      - ./enc:/run/secrets
@@ -122,7 +122,7 @@ services:
      POSTGRES_DB: core_mainnet
      POSTGRES_USER: node
   core:
-    image: arkecosystem/core
+    image: laroue/core
     container_name: core-mainnet
     restart: always
     ports:
@@ -136,9 +136,9 @@ services:
       - SYS_RESOURCE
       - SYS_TIME
     volumes:
-     - ~/.config/ark-core:/home/node/.config/ark-core
-     - ~/.local/share/ark-core:/home/node/.local/share/ark-core
-     - ~/.local/state/ark-core:/home/node/.local/state/ark-core
+     - ~/.config/core:/home/node/.config/core
+     - ~/.local/share/core:/home/node/.local/share/core
+     - ~/.local/state/core:/home/node/.local/state/core
      - /etc/timezone:/etc/timezone:ro
      - /etc/localtime:/etc/localtime:ro
      - ./enc:/run/secrets
@@ -189,4 +189,4 @@ _If you prefer to use custom DB Name, DB User and DB Password simply adjust vari
 docker-compose up -d
 ```
 
-### _ARK Core docker image allows you to run a `forger`. However it requires some additional steps that can be found by visiting our [Documentation page](https://docs.ark.io/guidebook/core/docker.html)._
+### _Core docker image allows you to run a `forger`. However it requires some additional steps that can be found by visiting our [Documentation page](https://docs.laroue.org/guidebook/core/docker.html)._

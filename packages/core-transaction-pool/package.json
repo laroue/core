@@ -1,13 +1,9 @@
 {
-    "name": "@arkecosystem/core-transaction-pool",
-    "description": "Transaction Pool Manager for Ark Core",
+    "name": "@laroue/core-transaction-pool",
+    "description": "Transaction Pool Manager for Core",
     "version": "2.2.2",
     "contributors": [
-        "Kristjan Košič <kristjan@ark.io>",
-        "Brian Faust <brian@ark.io>",
-        "Alex Barnsley <alex@ark.io>",
-        "Vasil Dimov <vd@FreeBSD.org>",
-        "Joshua Noack <joshua@ark.io>"
+        "Luc Talarico <lta@laroue.org>"
     ],
     "license": "MIT",
     "main": "dist/index",
@@ -36,10 +32,10 @@
         "updates": "../../node_modules/npm-check-updates/bin/npm-check-updates -a"
     },
     "dependencies": {
-        "@arkecosystem/core-container": "^2.2.2",
-        "@arkecosystem/core-database": "^2.2.2",
-        "@arkecosystem/core-interfaces": "^2.2.2",
-        "@arkecosystem/crypto": "^2.2.2",
+        "@laroue/core-container": "^2.2.2",
+        "@laroue/core-database": "^2.2.2",
+        "@laroue/core-interfaces": "^2.2.2",
+        "@laroue/crypto": "^2.2.2",
         "better-sqlite3": "^5.4.0",
         "bs58check": "^2.1.2",
         "dayjs-ext": "^2.2.0",
@@ -48,8 +44,8 @@
         "pluralize": "^7.0.0"
     },
     "devDependencies": {
-        "@arkecosystem/core-test-utils": "^2.2.2",
-        "@arkecosystem/core-utils": "^2.2.2",
+        "@laroue/core-test-utils": "^2.2.2",
+        "@laroue/core-utils": "^2.2.2",
         "@types/better-sqlite3": "^5.2.2",
         "@types/bip39": "^2.4.1",
         "@types/fs-extra": "^5.0.5",

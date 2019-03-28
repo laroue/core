@@ -1,4 +1,4 @@
-import { Joi } from "@arkecosystem/crypto";
+import { Joi } from "@laroue/crypto";
 
 /**
  * @type {Object}

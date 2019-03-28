@@ -1,7 +1,7 @@
-import { app } from "@arkecosystem/core-container";
-import { Database, Logger } from "@arkecosystem/core-interfaces";
-import { roundCalculator } from "@arkecosystem/core-utils";
-import { Bignum, constants, crypto, formatSatoshi, isException, models } from "@arkecosystem/crypto";
+import { app } from "@laroue/core-container";
+import { Database, Logger } from "@laroue/core-interfaces";
+import { roundCalculator } from "@laroue/core-utils";
+import { Bignum, constants, crypto, formatSatoshi, isException, models } from "@laroue/crypto";
 import pluralize from "pluralize";
 
 const { Wallet } = models;
@@ -225,7 +225,7 @@ export class WalletManager implements Database.IWalletManager {
                         );
                     }
 
-                    return a.publicKey.localeCompare(b.publicKey, "en");
+                    return a.publicKey.localeCompare(b.publicKey, "fr");
                 }
 
                 return diff;

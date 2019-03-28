@@ -13,13 +13,13 @@ const main = async () => {
     } = await prompts([{
         type: 'text',
         name: 'corePath',
-        initial: expandHomeDir('~/ark-core'),
+        initial: expandHomeDir('~/core'),
         message: 'Where is the installation located at? [press ENTER to use default]',
         validate: value => fs.existsSync(value) ? true : `${value} does not exist.`
     }, {
         type: 'text',
         name: 'coreData',
-        initial: expandHomeDir('~/.ark'),
+        initial: expandHomeDir('~/.mlc'),
         message: 'Where is the configuration located at? [press ENTER to use default]',
         validate: value => fs.existsSync(value) ? true : `${value} does not exist.`
     }, {
@@ -35,7 +35,7 @@ const main = async () => {
     }]);
 
     // Paths
-    const corePaths = envPaths('ark', {
+    const corePaths = envPaths('mlc', {
         suffix: 'core'
     });
 
@@ -190,9 +190,9 @@ const main = async () => {
     // Update plugins file
     console.log('Update plugins configuration');
     let pluginContents = fs.readFileSync(`${paths.config.new}/plugins.js`).toString();
-    pluginContents = pluginContents.replace('@arkecosystem/core-transaction-pool-mem', '@arkecosystem/core-transaction-pool');
-    pluginContents = pluginContents.replace('"@arkecosystem/core-config": {},', '');
-    pluginContents = pluginContents.replace("'@arkecosystem/core-config': {},", '');
+    pluginContents = pluginContents.replace('@laroue/core-transaction-pool-mem', '@laroue/core-transaction-pool');
+    pluginContents = pluginContents.replace('"@laroue/core-config": {},', '');
+    pluginContents = pluginContents.replace("'@laroue/core-config': {},", '');
     pluginContents = pluginContents.replace(new RegExp('ARK_', 'g'), 'CORE_');
     fs.writeFileSync(`${paths.config.new}/plugins.js`, pluginContents);
 

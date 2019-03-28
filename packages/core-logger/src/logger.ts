@@ -1,4 +1,4 @@
-import { Logger } from "@arkecosystem/core-interfaces";
+import { Logger } from "@laroue/core-interfaces";
 
 export abstract class AbstractLogger implements Logger.ILogger {
     /**

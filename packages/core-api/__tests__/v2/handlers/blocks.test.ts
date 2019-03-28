@@ -1,14 +1,14 @@
-import "@arkecosystem/core-test-utils";
+import "@laroue/core-test-utils";
 import { setUp, tearDown } from "../../__support__/setup";
 import { utils } from "../utils";
 
-import { models } from "@arkecosystem/crypto";
+import { models } from "@laroue/crypto";
 import genesisBlock from "../../../../core-test-utils/src/config/testnet/genesisBlock.json";
 import { blocks2to100 } from "../../../../core-test-utils/src/fixtures";
 import { resetBlockchain } from "../../../../core-test-utils/src/helpers";
 
-import { app } from "@arkecosystem/core-container";
-import { Database } from "@arkecosystem/core-interfaces";
+import { app } from "@laroue/core-container";
+import { Database } from "@laroue/core-interfaces";
 
 const container = app;
 const { Block } = models;

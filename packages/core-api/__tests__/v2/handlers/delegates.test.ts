@@ -1,14 +1,14 @@
-import "@arkecosystem/core-test-utils";
+import "@laroue/core-test-utils";
 import { calculateRanks, setUp, tearDown } from "../../__support__/setup";
 import { utils } from "../utils";
 
 import { blocks2to100 } from "../../../../core-test-utils/src/fixtures/testnet/blocks2to100";
 
-import { Bignum, models } from "@arkecosystem/crypto";
+import { Bignum, models } from "@laroue/crypto";
 const { Block } = models;
 
-import { app } from "@arkecosystem/core-container";
-import { Database } from "@arkecosystem/core-interfaces";
+import { app } from "@laroue/core-container";
+import { Database } from "@laroue/core-interfaces";
 
 const delegate = {
     username: "genesis_9",

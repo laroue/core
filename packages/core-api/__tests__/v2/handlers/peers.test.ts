@@ -1,6 +1,6 @@
-import { app } from "@arkecosystem/core-container";
-import { Peer } from "@arkecosystem/core-p2p/src/peer";
-import "@arkecosystem/core-test-utils";
+import { app } from "@laroue/core-container";
+import { Peer } from "@laroue/core-p2p/src/peer";
+import "@laroue/core-test-utils";
 import { setUp, tearDown } from "../../__support__/setup";
 import { utils } from "../utils";
 

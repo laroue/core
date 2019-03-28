@@ -1,4 +1,4 @@
-import { networks } from "@arkecosystem/crypto";
+import { networks } from "@laroue/crypto";
 import Command, { flags } from "@oclif/command";
 import cli from "cli-ux";
 import envPaths from "env-paths";
@@ -179,7 +179,7 @@ export abstract class BaseCommand extends Command {
 
                 if (!folders || folders.length === 0) {
                     this.error(
-                        'We were unable to detect any configuration. Please run "ark config:publish" and try again.',
+                        'We were unable to detect any configuration. Please run "mlc config:publish" and try again.',
                     );
                 }
 
@@ -212,7 +212,7 @@ export abstract class BaseCommand extends Command {
                 }
             } catch (error) {
                 this.error(
-                    'We were unable to detect any configuration. Please run "ark config:publish" and try again.',
+                    'We were unable to detect any configuration. Please run "mlc config:publish" and try again.',
                 );
             }
         }
