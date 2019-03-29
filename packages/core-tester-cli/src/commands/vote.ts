@@ -1,4 +1,4 @@
-import { client } from "@laroue/crypto";
+import { client } from "@arkecosystem/crypto";
 import { flags } from "@oclif/command";
 import sample from "lodash/sample";
 import pluralize from "pluralize";

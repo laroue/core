@@ -1,5 +1,5 @@
-import { app } from "@laroue/core-container";
-import { P2P } from "@laroue/core-interfaces";
+import { app } from "@arkecosystem/core-container";
+import { P2P } from "@arkecosystem/core-interfaces";
 import Boom from "boom";
 import Hapi from "hapi";
 import { Controller } from "../shared/controller";

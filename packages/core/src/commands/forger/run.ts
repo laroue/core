@@ -1,4 +1,4 @@
-import { app } from "@laroue/core-container";
+import { app } from "@arkecosystem/core-container";
 import { CommandFlags } from "../../types";
 import { BaseCommand } from "../command";
 
@@ -24,14 +24,14 @@ $ mlc forger:run --bip38="..." --password="..."
 
         await this.buildApplication(app, flags, {
             include: [
-                "@laroue/core-event-emitter",
-                "@laroue/core-config",
-                "@laroue/core-logger",
-                "@laroue/core-logger-winston",
-                "@laroue/core-forger",
+                "@arkecosystem/core-event-emitter",
+                "@arkecosystem/core-config",
+                "@arkecosystem/core-logger",
+                "@arkecosystem/core-logger-winston",
+                "@arkecosystem/core-forger",
             ],
             options: {
-                "@laroue/core-forger": await this.buildBIP38(flags),
+                "@arkecosystem/core-forger": await this.buildBIP38(flags),
             },
         });
     }

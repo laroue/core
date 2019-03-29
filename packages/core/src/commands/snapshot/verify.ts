@@ -1,5 +1,5 @@
-import { app } from "@laroue/core-container";
-import { SnapshotManager } from "@laroue/core-snapshots";
+import { app } from "@arkecosystem/core-container";
+import { SnapshotManager } from "@arkecosystem/core-snapshots";
 import { flags } from "@oclif/command";
 import { setUpLite } from "../../helpers/snapshot";
 import { CommandFlags } from "../../types";
@@ -27,7 +27,7 @@ export class VerifyCommand extends BaseCommand {
         await setUpLite(flags);
 
         if (!app.has("snapshots")) {
-            this.error("The @laroue/core-snapshots plugin is not installed.");
+            this.error("The @arkecosystem/core-snapshots plugin is not installed.");
         }
 
         await app.resolvePlugin<SnapshotManager>("snapshots").verifyData(flags);

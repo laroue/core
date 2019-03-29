@@ -1,6 +1,6 @@
-import { app } from "@laroue/core-container";
-import { Blockchain, Database } from "@laroue/core-interfaces";
-import { models } from "@laroue/crypto";
+import { app } from "@arkecosystem/core-container";
+import { Blockchain, Database } from "@arkecosystem/core-interfaces";
+import { models } from "@arkecosystem/crypto";
 import * as schema from "../schemas/transactions";
 
 const config = app.getConfig();

@@ -1,4 +1,4 @@
-import { Container } from "@laroue/core-interfaces";
+import { Container } from "@arkecosystem/core-interfaces";
 import Sentry from "@sentry/node";
 import { defaults } from "./defaults";
 

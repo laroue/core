@@ -5,10 +5,10 @@
  */
 export function transformPlugins(config) {
     const allowed = [
-        "@laroue/core-api",
-        "@laroue/core-graphql",
-        "@laroue/core-json-rpc",
-        "@laroue/core-webhooks",
+        "@arkecosystem/core-api",
+        "@arkecosystem/core-graphql",
+        "@arkecosystem/core-json-rpc",
+        "@arkecosystem/core-webhooks",
     ];
 
     const result = {};

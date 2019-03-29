@@ -1,6 +1,6 @@
-import { app } from "@laroue/core-container";
-import { Logger } from "@laroue/core-interfaces";
-import { configManager } from "@laroue/crypto";
+import { app } from "@arkecosystem/core-container";
+import { Logger } from "@arkecosystem/core-interfaces";
+import { configManager } from "@arkecosystem/crypto";
 import bs58check from "bs58check";
 
 const logger = app.resolvePlugin<Logger.ILogger>("logger");

@@ -1,4 +1,4 @@
-import { models } from "@laroue/crypto";
+import { models } from "@arkecosystem/crypto";
 import { IParameters } from "./parameters";
 
 export interface IDelegatesBusinessRepository {

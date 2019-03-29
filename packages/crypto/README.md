@@ -7,13 +7,13 @@
 ## Installation
 
 ```bash
-yarn add @laroue/crypto
+yarn add @arkecosystem/crypto
 ```
 
 If you want to use the CDN version:
 
 ```html
-<script src="https://unpkg.com/@laroue/crypto/dist/index.umd.js"></script>
+<script src="https://unpkg.com/@arkecosystem/crypto/dist/index.umd.js"></script>
 ```
 
 ## Usage
@@ -21,7 +21,7 @@ If you want to use the CDN version:
 Import the library in node.js:
 
 ```
-import Crypto from @laroue/crypto
+import Crypto from @arkecosystem/crypto
 ```
 
 Use the library:

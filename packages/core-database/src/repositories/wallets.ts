@@ -1,5 +1,5 @@
-import { Database } from "@laroue/core-interfaces";
-import { orderBy } from "@laroue/utils";
+import { Database } from "@arkecosystem/core-interfaces";
+import { orderBy } from "@arkecosystem/utils";
 import filterRows from "./utils/filter-rows";
 import limitRows from "./utils/limit-rows";
 import { sortEntries } from "./utils/sort-entries";

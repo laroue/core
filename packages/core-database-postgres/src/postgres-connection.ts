@@ -1,7 +1,7 @@
-import { app } from "@laroue/core-container";
-import { Database, EventEmitter, Logger } from "@laroue/core-interfaces";
-import { roundCalculator } from "@laroue/core-utils";
-import { models } from "@laroue/crypto";
+import { app } from "@arkecosystem/core-container";
+import { Database, EventEmitter, Logger } from "@arkecosystem/core-interfaces";
+import { roundCalculator } from "@arkecosystem/core-utils";
+import { models } from "@arkecosystem/crypto";
 import fs from "fs";
 import chunk from "lodash/chunk";
 import path from "path";

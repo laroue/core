@@ -1,5 +1,5 @@
-import { app } from "@laroue/core-container";
-import { Blockchain } from "@laroue/core-interfaces";
+import { app } from "@arkecosystem/core-container";
+import { Blockchain } from "@arkecosystem/core-interfaces";
 import * as schema from "../schemas/blocks";
 
 /**

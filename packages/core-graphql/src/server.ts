@@ -1,4 +1,4 @@
-import { createServer, mountServer } from "@laroue/core-http-utils";
+import { createServer, mountServer } from "@arkecosystem/core-http-utils";
 import { apolloServer } from "./apollo-server";
 
 export async function startServer(config) {

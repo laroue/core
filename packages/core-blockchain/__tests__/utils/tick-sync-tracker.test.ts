@@ -1,7 +1,7 @@
 import "jest-extended";
 
 const info = jest.fn();
-jest.mock("@laroue/core-container", () => {
+jest.mock("@arkecosystem/core-container", () => {
     return {
         app: {
             resolvePlugin: name => ({

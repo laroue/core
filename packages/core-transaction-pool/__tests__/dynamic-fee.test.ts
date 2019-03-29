@@ -1,4 +1,4 @@
-import { Blockchain, Container } from "@laroue/core-interfaces";
+import { Blockchain, Container } from "@arkecosystem/core-interfaces";
 import { calculateFee, dynamicFeeMatcher } from "../src/dynamic-fee";
 import { transactions } from "./__fixtures__/transactions";
 import { setUpFull, tearDownFull } from "./__support__/setup";

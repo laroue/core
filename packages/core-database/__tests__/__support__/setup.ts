@@ -1,6 +1,6 @@
-import { app } from "@laroue/core-container";
-import "@laroue/core-test-utils";
-import { setUpContainer } from "@laroue/core-test-utils/src/helpers/container";
+import { app } from "@arkecosystem/core-container";
+import "@arkecosystem/core-test-utils";
+import { setUpContainer } from "@arkecosystem/core-test-utils/src/helpers/container";
 
 export const setUp = async () => {
     jest.setTimeout(60000);
@@ -8,11 +8,11 @@ export const setUp = async () => {
     process.env.CORE_SKIP_BLOCKCHAIN = "true";
 
     return await setUpContainer({
-        exit: "@laroue/core-blockchain",
+        exit: "@arkecosystem/core-blockchain",
         exclude: [
-            "@laroue/core-p2p",
-            "@laroue/core-transaction-pool",
-            "@laroue/core-database-postgres",
+            "@arkecosystem/core-p2p",
+            "@arkecosystem/core-transaction-pool",
+            "@arkecosystem/core-database-postgres",
         ],
     });
 };

@@ -1,4 +1,4 @@
-import { client, constants, crypto } from "@laroue/crypto";
+import { client, constants, crypto } from "@arkecosystem/crypto";
 import superheroes from "superheroes";
 import { delegatesSecrets } from "../../fixtures/testnet/passphrases";
 

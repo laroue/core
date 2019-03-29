@@ -1,4 +1,4 @@
-import { models } from "@laroue/crypto";
+import { models } from "@arkecosystem/crypto";
 import { Logger } from "../index";
 
 export interface IWalletManager {

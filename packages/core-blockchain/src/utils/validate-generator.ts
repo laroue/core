@@ -1,6 +1,6 @@
-import { app } from "@laroue/core-container";
-import { Logger } from "@laroue/core-interfaces";
-import { models, slots } from "@laroue/crypto";
+import { app } from "@arkecosystem/core-container";
+import { Logger } from "@arkecosystem/core-interfaces";
+import { models, slots } from "@arkecosystem/crypto";
 
 export const validateGenerator = async (block: models.Block): Promise<boolean> => {
     const database = app.resolvePlugin("database");

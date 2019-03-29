@@ -1,4 +1,4 @@
-import { slots } from "@laroue/crypto";
+import { slots } from "@arkecosystem/crypto";
 import Boom from "boom";
 import Hapi from "hapi";
 import { Controller } from "../shared/controller";

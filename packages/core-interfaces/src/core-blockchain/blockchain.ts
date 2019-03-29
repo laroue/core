@@ -1,4 +1,4 @@
-import { models } from "@laroue/crypto";
+import { models } from "@arkecosystem/crypto";
 import { IMonitor } from "../core-p2p";
 import { ITransactionPool } from "../core-transaction-pool";
 import { IStateStorage } from "./state-storage";

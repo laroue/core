@@ -1,4 +1,4 @@
-import { models } from "@laroue/crypto";
+import { models } from "@arkecosystem/crypto";
 const { Transaction } = models;
 
 /**

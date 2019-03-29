@@ -1,8 +1,8 @@
-import { generators } from "@laroue/core-test-utils";
+import { generators } from "@arkecosystem/core-test-utils";
 import "jest-extended";
 
-import { NetworkState, NetworkStateStatus } from "@laroue/core-p2p";
-import { Bignum, models } from "@laroue/crypto";
+import { NetworkState, NetworkStateStatus } from "@arkecosystem/core-p2p";
+import { Bignum, models } from "@arkecosystem/crypto";
 import { testnet } from "../../crypto/src/networks";
 import { defaults } from "../src/defaults";
 import { ForgerManager } from "../src/manager";

@@ -1,6 +1,6 @@
-import { app } from "@laroue/core-container";
-import { Logger, P2P } from "@laroue/core-interfaces";
-import { configManager } from "@laroue/crypto";
+import { app } from "@arkecosystem/core-container";
+import { Logger, P2P } from "@arkecosystem/core-interfaces";
+import { configManager } from "@arkecosystem/crypto";
 import axios from "axios";
 import isReachable from "is-reachable";
 import sample from "lodash/sample";
@@ -73,7 +73,7 @@ class Network {
             const peerPort = app.resolveOptions("p2p").port;
             const response = await axios.get(`http://${this.server.ip}:${peerPort}/config`);
 
-            const plugin = response.data.data.plugins["@laroue/core-api"];
+            const plugin = response.data.data.plugins["@arkecosystem/core-api"];
 
             if (!plugin.enabled) {
                 const index = this.peers.findIndex(peer => peer.ip === this.server.ip);

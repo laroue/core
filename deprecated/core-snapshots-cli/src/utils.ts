@@ -1,14 +1,14 @@
-import { app } from "@laroue/core-container";
+import { app } from "@arkecosystem/core-container";
 
 export const setUpLite = async options => {
     process.env.CORE_SKIP_BLOCKCHAIN = "true";
 
     await app.setUp("2.0.0", options, {
         include: [
-            "@laroue/core-logger",
-            "@laroue/core-logger-winston",
-            "@laroue/core-event-emitter",
-            "@laroue/core-snapshots",
+            "@arkecosystem/core-logger",
+            "@arkecosystem/core-logger-winston",
+            "@arkecosystem/core-event-emitter",
+            "@arkecosystem/core-snapshots",
         ],
     });
 

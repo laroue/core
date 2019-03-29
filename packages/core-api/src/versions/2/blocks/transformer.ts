@@ -1,6 +1,6 @@
-import { app } from "@laroue/core-container";
-import { Database } from "@laroue/core-interfaces";
-import { bignumify, formatTimestamp } from "@laroue/core-utils";
+import { app } from "@arkecosystem/core-container";
+import { Database } from "@arkecosystem/core-interfaces";
+import { bignumify, formatTimestamp } from "@arkecosystem/core-utils";
 
 export function transformBlock(model) {
     const databaseService = app.resolvePlugin<Database.IDatabaseService>("database");

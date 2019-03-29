@@ -1,5 +1,5 @@
 {
-    "name": "@laroue/core-snapshots-cli",
+    "name": "@arkecosystem/core-snapshots-cli",
     "description": "Provides live cli interface to the core-snapshots module for Blockchain Core",
     "version": "2.2.0",
     "contributors": [
@@ -55,9 +55,9 @@
         "updates": "../../node_modules/npm-check-updates/bin/npm-check-updates -a"
     },
     "dependencies": {
-        "@laroue/core-container": "^2.2.0-beta.7",
-        "@laroue/core-interfaces": "^2.2.0-beta.7",
-        "@laroue/core-snapshots": "^2.2.0-beta.7",
+        "@arkecosystem/core-container": "^2.2.0-beta.7",
+        "@arkecosystem/core-interfaces": "^2.2.0-beta.7",
+        "@arkecosystem/core-snapshots": "^2.2.0-beta.7",
         "@oclif/command": "^1.5.10",
         "@oclif/config": "^1.12.6",
         "@oclif/plugin-help": "^2.1.6",

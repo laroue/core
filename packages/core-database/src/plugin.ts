@@ -1,4 +1,4 @@
-import { Container, Logger } from "@laroue/core-interfaces";
+import { Container, Logger } from "@arkecosystem/core-interfaces";
 import { DatabaseManager } from "./manager";
 
 export const plugin: Container.PluginDescriptor = {

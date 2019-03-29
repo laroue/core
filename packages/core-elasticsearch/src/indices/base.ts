@@ -1,5 +1,5 @@
-import { app } from "@laroue/core-container";
-import { Database, EventEmitter, Logger } from "@laroue/core-interfaces";
+import { app } from "@arkecosystem/core-container";
+import { Database, EventEmitter, Logger } from "@arkecosystem/core-interfaces";
 import { client } from "../client";
 import { storage } from "../storage";
 

@@ -14,9 +14,9 @@
   resolved "https://registry.yarnpkg.com/@apollographql/graphql-playground-html/-/graphql-playground-html-1.6.6.tgz#022209e28a2b547dcde15b219f0c50f47aa5beb3"
   integrity sha512-lqK94b+caNtmKFs5oUVXlSpN3sm5IXZ+KfhMxOtr0LR2SqErzkoJilitjDvJ1WbjHlxLI7WtCjRmOLdOGJqtMQ==
 
-"@laroue/utils@^0.2.4":
+"@arkecosystem/utils@^0.2.4":
   version "0.2.4"
-  resolved "https://registry.yarnpkg.com/@laroue/utils/-/utils-0.2.4.tgz#1458a1046141adb55e9b8af0a355b00920d35332"
+  resolved "https://registry.yarnpkg.com/@arkecosystem/utils/-/utils-0.2.4.tgz#1458a1046141adb55e9b8af0a355b00920d35332"
   integrity sha512-24+DQLJ42KOJywFiq6oWd7oUJwbUZMRrVUkec8HprwXXza5MjmcIYf62cHqSfikTCxWJdXXKujUaKNd9ZJpPoA==
   dependencies:
     "@flatten/array" "^1.1.7"

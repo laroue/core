@@ -190,9 +190,9 @@ const main = async () => {
     // Update plugins file
     console.log('Update plugins configuration');
     let pluginContents = fs.readFileSync(`${paths.config.new}/plugins.js`).toString();
-    pluginContents = pluginContents.replace('@laroue/core-transaction-pool-mem', '@laroue/core-transaction-pool');
-    pluginContents = pluginContents.replace('"@laroue/core-config": {},', '');
-    pluginContents = pluginContents.replace("'@laroue/core-config': {},", '');
+    pluginContents = pluginContents.replace('@arkecosystem/core-transaction-pool-mem', '@arkecosystem/core-transaction-pool');
+    pluginContents = pluginContents.replace('"@arkecosystem/core-config": {},', '');
+    pluginContents = pluginContents.replace("'@arkecosystem/core-config': {},", '');
     pluginContents = pluginContents.replace(new RegExp('ARK_', 'g'), 'CORE_');
     fs.writeFileSync(`${paths.config.new}/plugins.js`, pluginContents);
 

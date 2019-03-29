@@ -1,4 +1,4 @@
-import { models } from "@laroue/crypto";
+import { models } from "@arkecosystem/crypto";
 import { client } from "../client";
 import { storage } from "../storage";
 import { first, last } from "../utils";

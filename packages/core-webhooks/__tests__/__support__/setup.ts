@@ -1,5 +1,5 @@
-import { app } from "@laroue/core-container";
-import { setUpContainer } from "@laroue/core-test-utils/src/helpers/container";
+import { app } from "@arkecosystem/core-container";
+import { setUpContainer } from "@arkecosystem/core-test-utils/src/helpers/container";
 import { database } from "../../src/database";
 import { webhookManager } from "../../src/manager";
 import { startServer } from "../../src/server";
@@ -10,7 +10,7 @@ async function setUp() {
     process.env.CORE_WEBHOOKS_ENABLED = "true";
 
     await setUpContainer({
-        exclude: ["@laroue/core-api", "@laroue/core-graphql", "@laroue/core-forger"],
+        exclude: ["@arkecosystem/core-api", "@arkecosystem/core-graphql", "@arkecosystem/core-forger"],
     });
 
     await database.setUp({

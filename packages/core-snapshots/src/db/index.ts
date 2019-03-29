@@ -1,6 +1,6 @@
-import { app } from "@laroue/core-container";
-import { migrations, plugin, PostgresConnection } from "@laroue/core-database-postgres";
-import { Logger } from "@laroue/core-interfaces";
+import { app } from "@arkecosystem/core-container";
+import { migrations, plugin, PostgresConnection } from "@arkecosystem/core-database-postgres";
+import { Logger } from "@arkecosystem/core-interfaces";
 import promise from "bluebird";
 
 import { queries } from "./queries";

@@ -1,4 +1,4 @@
-import { models, slots } from "@laroue/crypto";
+import { models, slots } from "@arkecosystem/crypto";
 
 export const isBlockChained = (previousBlock: models.IBlock, nextBlock: models.IBlock): boolean => {
     const followsPrevious = nextBlock.data.previousBlock === previousBlock.data.id;

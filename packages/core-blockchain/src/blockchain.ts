@@ -1,5 +1,5 @@
 /* tslint:disable:max-line-length */
-import { app } from "@laroue/core-container";
+import { app } from "@arkecosystem/core-container";
 import {
     Blockchain as blockchain,
     Database,
@@ -7,8 +7,8 @@ import {
     Logger,
     P2P,
     TransactionPool,
-} from "@laroue/core-interfaces";
-import { models, slots } from "@laroue/crypto";
+} from "@arkecosystem/core-interfaces";
+import { models, slots } from "@arkecosystem/crypto";
 
 import delay from "delay";
 import pluralize from "pluralize";

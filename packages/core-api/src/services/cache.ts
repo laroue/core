@@ -1,4 +1,4 @@
-import { app } from "@laroue/core-container";
+import { app } from "@arkecosystem/core-container";
 import { createHash } from "crypto";
 import Hapi from "hapi";
 

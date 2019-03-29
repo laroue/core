@@ -1,6 +1,6 @@
 import "../../../src/transactions/types/delegate-resignation";
 
-import { constants } from "@laroue/crypto";
+import { constants } from "@arkecosystem/crypto";
 const { TransactionTypes } = constants;
 
 describe(".toBeDelegateResignationType", () => {

@@ -1,7 +1,7 @@
-import "@laroue/core-test-utils";
-import { fixtures, generators } from "@laroue/core-test-utils";
-import genesisBlockTestnet from "@laroue/core-test-utils/src/config/testnet/genesisBlock.json";
-import { models } from "@laroue/crypto";
+import "@arkecosystem/core-test-utils";
+import { fixtures, generators } from "@arkecosystem/core-test-utils";
+import genesisBlockTestnet from "@arkecosystem/core-test-utils/src/config/testnet/genesisBlock.json";
+import { models } from "@arkecosystem/crypto";
 import { Blockchain } from "../../src/blockchain";
 import { BlockProcessor, BlockProcessorResult } from "../../src/processor";
 import * as handlers from "../../src/processor/handlers";

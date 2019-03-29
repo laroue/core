@@ -1,4 +1,4 @@
-import { constants } from "@laroue/crypto";
+import { constants } from "@arkecosystem/crypto";
 import Boom from "boom";
 import { transactionsRepository } from "../../../repositories";
 import { ServerCache } from "../../../services";

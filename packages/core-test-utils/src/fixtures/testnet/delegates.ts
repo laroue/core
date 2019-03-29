@@ -1,4 +1,4 @@
-import { client, crypto } from "@laroue/crypto";
+import { client, crypto } from "@arkecosystem/crypto";
 
 /**
  * Get the testnet genesis delegates information

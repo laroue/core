@@ -1,8 +1,8 @@
 /* tslint:disable:max-line-length */
-import { app } from "@laroue/core-container";
-import { Database } from "@laroue/core-interfaces";
-import { bignumify } from "@laroue/core-utils";
-import { Bignum, constants, models, slots } from "@laroue/crypto";
+import { app } from "@arkecosystem/core-container";
+import { Database } from "@arkecosystem/core-interfaces";
+import { bignumify } from "@arkecosystem/core-utils";
+import { Bignum, constants, models, slots } from "@arkecosystem/crypto";
 import dayjs from "dayjs-ext";
 import delay from "delay";
 import randomSeed from "random-seed";

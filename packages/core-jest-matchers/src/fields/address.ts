@@ -1,4 +1,4 @@
-import { crypto } from "@laroue/crypto";
+import { crypto } from "@arkecosystem/crypto";
 
 export {};
 

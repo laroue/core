@@ -1,6 +1,6 @@
-import { app } from "@laroue/core-container";
-import { EventEmitter } from "@laroue/core-interfaces";
-import { SnapshotManager } from "@laroue/core-snapshots";
+import { app } from "@arkecosystem/core-container";
+import { EventEmitter } from "@arkecosystem/core-interfaces";
+import { SnapshotManager } from "@arkecosystem/core-snapshots";
 import { flags } from "@oclif/command";
 import cliProgress from "cli-progress";
 import { setUpLite } from "../../helpers/snapshot";
@@ -36,7 +36,7 @@ export class RestoreCommand extends BaseCommand {
         await setUpLite(flags);
 
         if (!app.has("snapshots")) {
-            this.error("The @laroue/core-snapshots plugin is not installed.");
+            this.error("The @arkecosystem/core-snapshots plugin is not installed.");
         }
 
         const emitter = app.resolvePlugin<EventEmitter.EventEmitter>("event-emitter");

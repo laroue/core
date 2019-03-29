@@ -1,4 +1,4 @@
-import { Bignum, models } from "@laroue/crypto";
+import { Bignum, models } from "@arkecosystem/crypto";
 import msgpack from "msgpack-lite";
 import { camelizeKeys, decamelizeKeys } from "xcase";
 const { Block, Transaction } = models;

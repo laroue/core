@@ -1,5 +1,5 @@
 {
-    "name": "@laroue/core-event-emitter",
+    "name": "@arkecosystem/core-event-emitter",
     "description": "Event Manager for Core",
     "version": "2.2.2",
     "contributors": [

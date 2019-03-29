@@ -1,4 +1,4 @@
-import { configManager as crypto, HashAlgorithms } from "@laroue/crypto";
+import { configManager as crypto, HashAlgorithms } from "@arkecosystem/crypto";
 import get from "lodash/get";
 import set from "lodash/set";
 import { fileLoader } from "./loaders";
@@ -39,7 +39,7 @@ class Config {
     }
 
     /**
-     * Configure the @laroue/crypto package.
+     * Configure the @arkecosystem/crypto package.
      * @return {void}
      */
     private configureCrypto(value: any): void {

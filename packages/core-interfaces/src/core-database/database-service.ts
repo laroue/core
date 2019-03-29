@@ -1,4 +1,4 @@
-import { models } from "@laroue/crypto";
+import { models } from "@arkecosystem/crypto";
 import { EventEmitter, Logger } from "../index";
 import { IDelegatesBusinessRepository, IWalletsBusinessRepository } from "./business-repository";
 import { IDatabaseConnection } from "./database-connection";

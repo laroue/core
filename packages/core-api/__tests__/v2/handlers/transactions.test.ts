@@ -1,5 +1,5 @@
-import "@laroue/core-test-utils";
-import { constants } from "@laroue/crypto";
+import "@arkecosystem/core-test-utils";
+import { constants } from "@arkecosystem/crypto";
 import { setUp, tearDown } from "../../__support__/setup";
 import { utils } from "../utils";
 

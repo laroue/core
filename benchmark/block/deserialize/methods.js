@@ -1,4 +1,4 @@
-const { models } = require('@laroue/crypto')
+const { models } = require('@arkecosystem/crypto')
 
 exports.deserialize = data => {
     return models.Block.deserialize(data)

@@ -1,7 +1,7 @@
-import "@laroue/core-test-utils";
-import { blocks101to155 } from "@laroue/core-test-utils/src/fixtures/testnet/blocks101to155";
-import { blocks2to100 } from "@laroue/core-test-utils/src/fixtures/testnet/blocks2to100";
-import { models } from "@laroue/crypto";
+import "@arkecosystem/core-test-utils";
+import { blocks101to155 } from "@arkecosystem/core-test-utils/src/fixtures/testnet/blocks101to155";
+import { blocks2to100 } from "@arkecosystem/core-test-utils/src/fixtures/testnet/blocks2to100";
+import { models } from "@arkecosystem/crypto";
 import delay from "delay";
 import { config } from "../src/config";
 import { defaults } from "../src/defaults";

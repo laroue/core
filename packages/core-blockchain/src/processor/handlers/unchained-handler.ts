@@ -1,7 +1,7 @@
 // tslint:disable:max-classes-per-file
 
-import { app } from "@laroue/core-container";
-import { models } from "@laroue/crypto";
+import { app } from "@arkecosystem/core-container";
+import { models } from "@arkecosystem/crypto";
 import { Blockchain } from "../../blockchain";
 import { BlockProcessorResult } from "../block-processor";
 import { BlockHandler } from "./block-handler";

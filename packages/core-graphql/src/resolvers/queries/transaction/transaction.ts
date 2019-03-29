@@ -1,5 +1,5 @@
-import { app } from "@laroue/core-container";
-import { Database } from "@laroue/core-interfaces";
+import { app } from "@arkecosystem/core-container";
+import { Database } from "@arkecosystem/core-interfaces";
 
 /**
  * Get a single transaction from the database

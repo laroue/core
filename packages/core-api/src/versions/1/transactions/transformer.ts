@@ -1,7 +1,7 @@
-import { app } from "@laroue/core-container";
-import { Blockchain } from "@laroue/core-interfaces";
-import { bignumify } from "@laroue/core-utils";
-import { crypto, models } from "@laroue/crypto";
+import { app } from "@arkecosystem/core-container";
+import { Blockchain } from "@arkecosystem/core-interfaces";
+import { bignumify } from "@arkecosystem/core-utils";
+import { crypto, models } from "@arkecosystem/crypto";
 
 export function transformTransactionLegacy(model) {
     const config = app.getConfig();

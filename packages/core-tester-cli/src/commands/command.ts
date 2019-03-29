@@ -1,5 +1,5 @@
-import { bignumify } from "@laroue/core-utils";
-import { Bignum, crypto } from "@laroue/crypto";
+import { bignumify } from "@arkecosystem/core-utils";
+import { Bignum, crypto } from "@arkecosystem/crypto";
 import Command, { flags } from "@oclif/command";
 import bip39 from "bip39";
 import clipboardy from "clipboardy";

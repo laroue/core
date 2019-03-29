@@ -1,5 +1,5 @@
-import { app } from "@laroue/core-container";
-import { Database, TransactionPool } from "@laroue/core-interfaces";
+import { app } from "@arkecosystem/core-container";
+import { Database, TransactionPool } from "@arkecosystem/core-interfaces";
 
 export abstract class Repository {
     public databaseService = app.resolvePlugin<Database.IDatabaseService>("database");

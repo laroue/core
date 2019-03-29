@@ -1,10 +1,10 @@
 /* tslint:disable:jsdoc-format max-line-length */
 
-import { app } from "@laroue/core-container";
-import { EventEmitter, Logger } from "@laroue/core-interfaces";
+import { app } from "@arkecosystem/core-container";
+import { EventEmitter, Logger } from "@arkecosystem/core-interfaces";
 
-import { roundCalculator } from "@laroue/core-utils";
-import { isException, models, slots } from "@laroue/crypto";
+import { roundCalculator } from "@arkecosystem/core-utils";
+import { isException, models, slots } from "@arkecosystem/crypto";
 
 import pluralize from "pluralize";
 import { config as localConfig } from "./config";

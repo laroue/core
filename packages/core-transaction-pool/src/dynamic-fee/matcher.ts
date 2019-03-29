@@ -1,6 +1,6 @@
-import { app } from "@laroue/core-container";
-import { Logger } from "@laroue/core-interfaces";
-import { constants, feeManager, formatSatoshi } from "@laroue/crypto";
+import { app } from "@arkecosystem/core-container";
+import { Logger } from "@arkecosystem/core-interfaces";
+import { constants, feeManager, formatSatoshi } from "@arkecosystem/crypto";
 import camelCase from "lodash/camelCase";
 import { config as localConfig } from "../config";
 

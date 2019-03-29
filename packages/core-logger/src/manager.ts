@@ -1,4 +1,4 @@
-import { Logger } from "@laroue/core-interfaces";
+import { Logger } from "@arkecosystem/core-interfaces";
 
 export class LogManager {
     private drivers: Map<string, Logger.ILogger>;

@@ -1,5 +1,5 @@
-import { app } from "@laroue/core-container";
-import { Joi } from "@laroue/crypto";
+import { app } from "@arkecosystem/core-container";
+import { Joi } from "@arkecosystem/crypto";
 import { pagination } from "../shared/schemas/pagination";
 
 export const index: object = {

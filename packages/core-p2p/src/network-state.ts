@@ -1,6 +1,6 @@
 /* tslint:disable:no-shadowed-variable member-ordering max-classes-per-file */
-import { app } from "@laroue/core-container";
-import { slots } from "@laroue/crypto";
+import { app } from "@arkecosystem/core-container";
+import { slots } from "@arkecosystem/crypto";
 import { config as localConfig } from "./config";
 import { Monitor } from "./monitor";
 import { Peer } from "./peer";

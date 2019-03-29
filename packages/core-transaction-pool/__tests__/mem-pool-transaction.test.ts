@@ -1,4 +1,4 @@
-import { constants } from "@laroue/crypto";
+import { constants } from "@arkecosystem/crypto";
 import { MemPoolTransaction } from "../src/mem-pool-transaction";
 import { transactions } from "./__fixtures__/transactions";
 

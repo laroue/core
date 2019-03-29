@@ -1,8 +1,8 @@
 // tslint:disable:max-classes-per-file
-import { app } from "@laroue/core-container";
-import { Database, Logger } from "@laroue/core-interfaces";
-import { CappedSet, NSect, roundCalculator } from "@laroue/core-utils";
-import { models } from "@laroue/crypto";
+import { app } from "@arkecosystem/core-container";
+import { Database, Logger } from "@arkecosystem/core-interfaces";
+import { CappedSet, NSect, roundCalculator } from "@arkecosystem/core-utils";
+import { models } from "@arkecosystem/crypto";
 import assert from "assert";
 import { inspect } from "util";
 import { Peer } from "./peer";

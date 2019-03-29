@@ -1,4 +1,4 @@
-import { bignumify } from "@laroue/core-utils";
+import { bignumify } from "@arkecosystem/core-utils";
 import { Model } from "./model";
 
 export class Transaction extends Model {

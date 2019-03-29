@@ -1,4 +1,4 @@
-import { delegateCalculator } from "@laroue/core-utils";
+import { delegateCalculator } from "@arkecosystem/core-utils";
 
 export function transformDelegateLegacy(model) {
     return {

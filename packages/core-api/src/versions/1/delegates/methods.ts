@@ -1,5 +1,5 @@
-import { app } from "@laroue/core-container";
-import { Database } from "@laroue/core-interfaces";
+import { app } from "@arkecosystem/core-container";
+import { Database } from "@arkecosystem/core-interfaces";
 import { ServerCache } from "../../../services";
 import { paginate, respondWith, toCollection, toResource } from "../utils";
 

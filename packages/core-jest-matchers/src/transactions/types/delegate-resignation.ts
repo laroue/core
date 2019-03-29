@@ -1,4 +1,4 @@
-import { constants } from "@laroue/crypto";
+import { constants } from "@arkecosystem/crypto";
 const { DelegateResignation } = constants.TransactionTypes;
 
 export {};

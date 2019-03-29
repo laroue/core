@@ -1,4 +1,4 @@
-import "@laroue/core-test-utils";
+import "@arkecosystem/core-test-utils";
 import async from "async";
 import { asValue } from "awilix";
 import delay from "delay";

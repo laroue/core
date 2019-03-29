@@ -1,6 +1,6 @@
 import "../../../src/transactions/types/timelock-transfer";
 
-import { constants } from "@laroue/crypto";
+import { constants } from "@arkecosystem/crypto";
 const { TransactionTypes } = constants;
 
 describe(".toBeTimelockTransferType", () => {

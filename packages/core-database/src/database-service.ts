@@ -1,7 +1,7 @@
-import { app } from "@laroue/core-container";
-import { Blockchain, Database, EventEmitter, Logger } from "@laroue/core-interfaces";
-import { roundCalculator } from "@laroue/core-utils";
-import { Bignum, constants, crypto as mlcCrypto, models } from "@laroue/crypto";
+import { app } from "@arkecosystem/core-container";
+import { Blockchain, Database, EventEmitter, Logger } from "@arkecosystem/core-interfaces";
+import { roundCalculator } from "@arkecosystem/core-utils";
+import { Bignum, constants, crypto as mlcCrypto, models } from "@arkecosystem/crypto";
 import assert from "assert";
 import crypto from "crypto";
 import cloneDeep from "lodash/cloneDeep";

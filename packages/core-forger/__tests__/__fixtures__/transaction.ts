@@ -1,4 +1,4 @@
-import { models } from "@laroue/crypto";
+import { models } from "@arkecosystem/crypto";
 
 export const sampleTransaction = new models.Transaction({
     type: 0,

@@ -1,4 +1,4 @@
-import { models } from "@laroue/crypto";
+import { models } from "@arkecosystem/crypto";
 
 export const sampleBlock = new models.Block({
     id: "4398082439836560423",

@@ -1,6 +1,6 @@
-import "@laroue/core-test-utils";
+import "@arkecosystem/core-test-utils";
 
-import { app } from "@laroue/core-container";
+import { app } from "@arkecosystem/core-container";
 import { setUp, tearDown } from "../../__support__/setup";
 import { utils } from "../utils";
 

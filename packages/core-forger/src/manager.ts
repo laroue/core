@@ -1,7 +1,7 @@
-import { app } from "@laroue/core-container";
-import { Logger } from "@laroue/core-interfaces";
-import { NetworkStateStatus } from "@laroue/core-p2p";
-import { models, slots } from "@laroue/crypto";
+import { app } from "@arkecosystem/core-container";
+import { Logger } from "@arkecosystem/core-interfaces";
+import { NetworkStateStatus } from "@arkecosystem/core-p2p";
+import { models, slots } from "@arkecosystem/crypto";
 import delay from "delay";
 import isEmpty from "lodash/isEmpty";
 import uniq from "lodash/uniq";

@@ -1,4 +1,4 @@
-import { app } from "@laroue/core-container";
+import { app } from "@arkecosystem/core-container";
 
 export function transformPeerLegacy(model) {
     const config = app.getConfig();

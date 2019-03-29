@@ -1,4 +1,4 @@
-import { models } from "@laroue/crypto";
+import { models } from "@arkecosystem/crypto";
 import BetterSqlite3 from "better-sqlite3";
 import fs from "fs-extra";
 import { MemPoolTransaction } from "./mem-pool-transaction";

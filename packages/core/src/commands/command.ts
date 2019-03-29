@@ -1,4 +1,4 @@
-import { networks } from "@laroue/crypto";
+import { networks } from "@arkecosystem/crypto";
 import Command, { flags } from "@oclif/command";
 import cli from "cli-ux";
 import envPaths from "env-paths";

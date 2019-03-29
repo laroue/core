@@ -1,5 +1,5 @@
-import { app } from "@laroue/core-container";
-import { SnapshotManager } from "@laroue/core-snapshots";
+import { app } from "@arkecosystem/core-container";
+import { SnapshotManager } from "@arkecosystem/core-snapshots";
 import { setUpLite } from "../utils";
 import { BaseCommand } from "./command";
 

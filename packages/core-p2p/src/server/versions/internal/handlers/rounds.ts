@@ -1,6 +1,6 @@
-import { app } from "@laroue/core-container";
-import { Blockchain, Database } from "@laroue/core-interfaces";
-import { slots } from "@laroue/crypto";
+import { app } from "@arkecosystem/core-container";
+import { Blockchain, Database } from "@arkecosystem/core-interfaces";
+import { slots } from "@arkecosystem/crypto";
 
 const config = app.getConfig();
 

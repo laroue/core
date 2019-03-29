@@ -1,4 +1,4 @@
-import { Container, Logger } from "@laroue/core-interfaces";
+import { Container, Logger } from "@arkecosystem/core-interfaces";
 import { config } from "./config";
 import { TransactionPool } from "./connection";
 import { defaults } from "./defaults";

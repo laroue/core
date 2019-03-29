@@ -1,8 +1,8 @@
 // tslint:disable:variable-name
 
-import { app } from "@laroue/core-container";
-import { Blockchain, Logger } from "@laroue/core-interfaces";
-import { configManager, models } from "@laroue/crypto";
+import { app } from "@arkecosystem/core-container";
+import { Blockchain, Logger } from "@arkecosystem/core-interfaces";
+import { configManager, models } from "@arkecosystem/crypto";
 import assert from "assert";
 import immutable from "immutable";
 import { config } from "./config";

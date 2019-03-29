@@ -1,6 +1,6 @@
 import {
-    DatabaseManager, databaseServiceFactory, WalletManager} from "@laroue/core-database";
-import { Container, Database, Logger } from "@laroue/core-interfaces";
+    DatabaseManager, databaseServiceFactory, WalletManager} from "@arkecosystem/core-database";
+import { Container, Database, Logger } from "@arkecosystem/core-interfaces";
 import { defaults } from "./defaults";
 import { PostgresConnection } from "./postgres-connection";
 
@@ -8,7 +8,7 @@ export const plugin: Container.PluginDescriptor = {
     pkg: require("../package.json"),
     defaults,
     alias: "database",
-    extends: "@laroue/core-database",
+    extends: "@arkecosystem/core-database",
     async register(container: Container.IContainer, options) {
         container.resolvePlugin<Logger.ILogger>("logger").info("Establishing Database Connection");
 

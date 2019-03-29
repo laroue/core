@@ -1,4 +1,4 @@
-import { sortBy } from "@laroue/utils";
+import { sortBy } from "@arkecosystem/utils";
 import isEqual from "lodash/isEqual";
 
 export {};

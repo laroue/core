@@ -1,4 +1,4 @@
-jest.mock("@laroue/core-container", () => {
+jest.mock("@arkecosystem/core-container", () => {
     return {
         app: {
             resolvePlugin: name => {

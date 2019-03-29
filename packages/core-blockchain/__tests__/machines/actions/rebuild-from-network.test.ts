@@ -1,4 +1,4 @@
-import "@laroue/core-test-utils/";
+import "@arkecosystem/core-test-utils/";
 
 import { blockchainMachine as machine } from "../../../src/machines/blockchain";
 

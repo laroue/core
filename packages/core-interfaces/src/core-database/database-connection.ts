@@ -3,7 +3,7 @@ import { IRoundsRepository } from "./database-repository";
 import { ITransactionsRepository } from "./database-repository";
 import { IWalletsRepository } from "./database-repository";
 
-import { models } from "@laroue/crypto";
+import { models } from "@arkecosystem/crypto";
 
 export interface IDatabaseConnection {
 

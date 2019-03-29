@@ -1,4 +1,4 @@
-import { transactionBuilder } from "@laroue/crypto";
+import { transactionBuilder } from "@arkecosystem/crypto";
 import Boom from "boom";
 import Joi from "joi";
 import { database } from "../../../services/database";

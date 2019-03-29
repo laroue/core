@@ -1,6 +1,6 @@
 import "../../../src/transactions/types/vote";
 
-import { constants } from "@laroue/crypto";
+import { constants } from "@arkecosystem/crypto";
 const { TransactionTypes } = constants;
 
 describe(".toBeVoteType", () => {

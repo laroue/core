@@ -1,4 +1,4 @@
-import { configManager, crypto } from "@laroue/crypto";
+import { configManager, crypto } from "@arkecosystem/crypto";
 import { flags } from "@oclif/command";
 import bip38 from "bip38";
 import bip39 from "bip39";

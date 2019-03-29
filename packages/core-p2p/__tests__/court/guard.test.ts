@@ -1,4 +1,4 @@
-import { app } from "@laroue/core-container";
+import { app } from "@arkecosystem/core-container";
 import dayjs from "dayjs-ext";
 import { offences } from "../../src/court/offences";
 import { defaults } from "../../src/defaults";

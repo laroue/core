@@ -1,7 +1,7 @@
-import { app } from "@laroue/core-container";
-import { Blockchain, Database, Logger, P2P } from "@laroue/core-interfaces";
-import { TransactionGuard, TransactionPool } from "@laroue/core-transaction-pool";
-import { Joi, models, slots } from "@laroue/crypto";
+import { app } from "@arkecosystem/core-container";
+import { Blockchain, Database, Logger, P2P } from "@arkecosystem/core-interfaces";
+import { TransactionGuard, TransactionPool } from "@arkecosystem/core-transaction-pool";
+import { Joi, models, slots } from "@arkecosystem/crypto";
 
 import pluralize from "pluralize";
 import { monitor } from "../../../monitor";

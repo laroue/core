@@ -1,4 +1,4 @@
-import { models } from "@laroue/crypto";
+import { models } from "@arkecosystem/crypto";
 import { flags } from "@oclif/command";
 import { handleOutput } from "../utils";
 import { BaseCommand } from "./command";

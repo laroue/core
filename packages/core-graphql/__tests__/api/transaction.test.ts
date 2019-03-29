@@ -1,4 +1,4 @@
-import "@laroue/core-test-utils";
+import "@arkecosystem/core-test-utils";
 import genesisBlock from "../../../core-test-utils/src/config/testnet/genesisBlock.json";
 
 import { setUp, tearDown } from "../__support__/setup";

@@ -215,13 +215,13 @@ ignore:
         reason: None given
         expires: '2018-12-11T05:03:38.314Z'
   'npm:chownr:20180731':
-    - '@laroue/core > @laroue/core-transaction-pool > better-sqlite3 > tar > chownr':
+    - '@arkecosystem/core > @arkecosystem/core-transaction-pool > better-sqlite3 > tar > chownr':
         reason: None given
         expires: '2018-12-11T05:03:38.314Z'
-    - '@laroue/core > @laroue/core-webhooks > sqlite3 > node-pre-gyp > tar > chownr':
+    - '@arkecosystem/core > @arkecosystem/core-webhooks > sqlite3 > node-pre-gyp > tar > chownr':
         reason: None given
         expires: '2018-12-11T05:03:38.314Z'
-    - '@laroue/core > @laroue/core-json-rpc > @keyv/sqlite > sqlite3 > node-pre-gyp > tar > chownr':
+    - '@arkecosystem/core > @arkecosystem/core-json-rpc > @keyv/sqlite > sqlite3 > node-pre-gyp > tar > chownr':
         reason: None given
         expires: '2018-12-11T05:03:38.314Z'
     - jest-mock-process > jest > jest-cli > jest-haste-map > sane > fsevents > node-pre-gyp > tar > chownr:
@@ -237,13 +237,13 @@ ignore:
         reason: None given
         expires: '2018-12-11T05:03:38.314Z'
   'npm:lodash:20180130':
-    - '@laroue/core > @laroue/core-database-postgres > sql > lodash':
+    - '@arkecosystem/core > @arkecosystem/core-database-postgres > sql > lodash':
         reason: None given
         expires: '2018-12-11T05:03:38.314Z'
-    - '@laroue/core-snapshots > @laroue/core-database-postgres > sql > lodash':
+    - '@arkecosystem/core-snapshots > @arkecosystem/core-database-postgres > sql > lodash':
         reason: None given
         expires: '2018-12-11T05:03:38.314Z'
-    - '@laroue/core > @laroue/core-json-rpc > @keyv/sqlite > @keyv/sql > sql > lodash':
+    - '@arkecosystem/core > @arkecosystem/core-json-rpc > @keyv/sqlite > @keyv/sql > sql > lodash':
         reason: None given
         expires: '2018-12-11T05:03:38.314Z'
   'npm:mem:20180117':
@@ -257,13 +257,13 @@ ignore:
         reason: None given
         expires: '2018-12-11T05:03:38.315Z'
   'npm:sql:20180512':
-    - '@laroue/core > @laroue/core-database-postgres > sql':
+    - '@arkecosystem/core > @arkecosystem/core-database-postgres > sql':
         reason: None given
         expires: '2018-12-11T05:03:38.315Z'
-    - '@laroue/core-snapshots > @laroue/core-database-postgres > sql':
+    - '@arkecosystem/core-snapshots > @arkecosystem/core-database-postgres > sql':
         reason: None given
         expires: '2018-12-11T05:03:38.315Z'
-    - '@laroue/core > @laroue/core-json-rpc > @keyv/sqlite > @keyv/sql > sql':
+    - '@arkecosystem/core > @arkecosystem/core-json-rpc > @keyv/sqlite > @keyv/sql > sql':
         reason: None given
         expires: '2018-12-11T05:03:38.315Z'
 patch: {}

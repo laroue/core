@@ -1,5 +1,5 @@
-import { bignumify } from "@laroue/core-utils";
-import { Bignum, client, formatSatoshi } from "@laroue/crypto";
+import { bignumify } from "@arkecosystem/core-utils";
+import { Bignum, client, formatSatoshi } from "@arkecosystem/crypto";
 import axios from "axios";
 import pino from "pino";
 

@@ -1,5 +1,5 @@
-import { Database } from "@laroue/core-interfaces";
-import { Bignum, crypto, models } from "@laroue/crypto";
+import { Database } from "@arkecosystem/core-interfaces";
+import { Bignum, crypto, models } from "@arkecosystem/crypto";
 import compact from "lodash/compact";
 import uniq from "lodash/uniq";
 import genesisBlockTestnet from "../../../core-test-utils/src/config/testnet/genesisBlock.json";

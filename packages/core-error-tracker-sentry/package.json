@@ -1,5 +1,5 @@
 {
-    "name": "@laroue/core-error-tracker-sentry",
+    "name": "@arkecosystem/core-error-tracker-sentry",
     "description": "Sentry error tracker integration for Core.",
     "version": "2.2.2",
     "contributors": [
@@ -26,7 +26,7 @@
         "updates": "../../node_modules/npm-check-updates/bin/npm-check-updates -a"
     },
     "dependencies": {
-        "@laroue/core-container": "^2.2.2",
+        "@arkecosystem/core-container": "^2.2.2",
         "@sentry/node": "^4.5.4"
     },
     "publishConfig": {

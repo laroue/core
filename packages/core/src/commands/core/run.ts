@@ -1,4 +1,4 @@
-import { app } from "@laroue/core-container";
+import { app } from "@arkecosystem/core-container";
 import { CommandFlags } from "../../types";
 import { BaseCommand } from "../command";
 
@@ -37,11 +37,11 @@ $ mlc core:run --launchMode=seed
 
         await this.buildApplication(app, flags, {
             options: {
-                "@laroue/core-p2p": this.buildPeerOptions(flags),
-                "@laroue/core-blockchain": {
+                "@arkecosystem/core-p2p": this.buildPeerOptions(flags),
+                "@arkecosystem/core-blockchain": {
                     networkStart: flags.networkStart,
                 },
-                "@laroue/core-forger": await this.buildBIP38(flags),
+                "@arkecosystem/core-forger": await this.buildBIP38(flags),
             },
         });
     }

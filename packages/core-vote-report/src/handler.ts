@@ -1,7 +1,7 @@
-import { app } from "@laroue/core-container";
-import { Blockchain, Database } from "@laroue/core-interfaces";
-import { delegateCalculator, supplyCalculator } from "@laroue/core-utils";
-import { configManager } from "@laroue/crypto";
+import { app } from "@arkecosystem/core-container";
+import { Blockchain, Database } from "@arkecosystem/core-interfaces";
+import { delegateCalculator, supplyCalculator } from "@arkecosystem/core-utils";
+import { configManager } from "@arkecosystem/crypto";
 import sumBy from "lodash/sumBy";
 
 export function handler(request, h) {

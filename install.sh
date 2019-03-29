@@ -201,7 +201,7 @@ success "Installed system updates!"
 
 heading "Installing Core..."
 
-yarn global add @laroue/core
+yarn global add @arkecosystem/core
 echo 'export PATH=$(yarn global bin):$PATH' >> ~/.bashrc
 export PATH=$(yarn global bin):$PATH
 mlc config:publish

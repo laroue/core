@@ -1,4 +1,4 @@
-import { Bignum, crypto } from "@laroue/crypto";
+import { Bignum, crypto } from "@arkecosystem/crypto";
 import { flags } from "@oclif/command";
 import delay from "delay";
 import unique from "lodash/uniq";

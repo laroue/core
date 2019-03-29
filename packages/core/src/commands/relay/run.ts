@@ -1,4 +1,4 @@
-import { app } from "@laroue/core-container";
+import { app } from "@arkecosystem/core-container";
 import { CommandFlags } from "../../types";
 import { BaseCommand } from "../command";
 
@@ -35,10 +35,10 @@ $ mlc relay:run --launchMode=seed
         const { flags } = await this.parseWithNetwork(RunCommand);
 
         await this.buildApplication(app, flags, {
-            exclude: ["@laroue/core-forger"],
+            exclude: ["@arkecosystem/core-forger"],
             options: {
-                "@laroue/core-p2p": this.buildPeerOptions(flags),
-                "@laroue/core-blockchain": {
+                "@arkecosystem/core-p2p": this.buildPeerOptions(flags),
+                "@arkecosystem/core-blockchain": {
                     networkStart: flags.networkStart,
                 },
             },

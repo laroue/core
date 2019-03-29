@@ -1,4 +1,4 @@
-import { Database } from "@laroue/core-interfaces";
+import { Database } from "@arkecosystem/core-interfaces";
 import { Transaction } from "../models";
 import { queries } from "../queries";
 import { Repository } from "./repository";
